@@ -36,15 +36,16 @@ body {
     }
   }
   #footer {
-    margin-top: 20px;
+    color: $footer-color;
+    margin-bottom: 20px;
     > .container {
-      min-height: 150px;
       background-color: $footer-background-color;
       padding-top: $gridGutterWidth;
       padding-bottom: $gridGutterWidth;
       padding-left: $gridGutterWidth;
       padding-right: $gridGutterWidth;
       @include box-shadow(0 1px 4px rgba(0, 0, 0, 0.065));
+      @include border-radius(0 0 4px 4px);
     }
   }
 }
