@@ -42,6 +42,19 @@
   }
 }
 
+// Navbar
+// --------------------------------------------------
+.navbar {
+  .btn-navbar {
+    border-color: darken($navbar-background-color, 30);
+    @include gradient-vertical(darken($navbar-background-color, 10), darken($navbar-background-color, 20));
+    &:hover {
+      @include transition(none);
+      @include gradient-vertical(darken($navbar-background-color, 20), darken($navbar-background-color, 10));
+    }
+  }
+}
+
 // Pane Menu Tree
 // --------------------------------------------------
 .pane-menu-tree {
