@@ -92,6 +92,9 @@
   // featured
   &.node-featured {
     margin-bottom: 10px;
+    .sidebar {
+      float: left;
+    }
     .pane-node-title {
       margin-bottom: 0;
       .pane-content {

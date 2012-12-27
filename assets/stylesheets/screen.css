@@ -300,22 +300,26 @@ ul.tabs.secondary > .active > a, ul.action-links > .active > a {
 #blog-node.node-featured {
   margin-bottom: 10px; }
   /* line 95, ../sass/_node.scss */
+  .node-blog-post.node-featured .sidebar,
+  #blog-node.node-featured .sidebar {
+    float: left; }
+  /* line 98, ../sass/_node.scss */
   .node-blog-post.node-featured .pane-node-title,
   #blog-node.node-featured .pane-node-title {
     margin-bottom: 0; }
-    /* line 97, ../sass/_node.scss */
+    /* line 100, ../sass/_node.scss */
     .node-blog-post.node-featured .pane-node-title .pane-content,
     #blog-node.node-featured .pane-node-title .pane-content {
       margin-bottom: 5px; }
-      /* line 99, ../sass/_node.scss */
+      /* line 102, ../sass/_node.scss */
       .node-blog-post.node-featured .pane-node-title .pane-content a,
       #blog-node.node-featured .pane-node-title .pane-content a {
         font-size: 1.2em; }
 
-/* line 110, ../sass/_node.scss */
+/* line 113, ../sass/_node.scss */
 .node-event .field {
   margin-bottom: 10px; }
-/* line 115, ../sass/_node.scss */
+/* line 118, ../sass/_node.scss */
 .node-event.view-mode-full .field-name-field-event-images .field-items {
   margin-left: -10px;
   *zoom: 1; }
@@ -327,7 +331,7 @@ ul.tabs.secondary > .active > a, ul.action-links > .active > a {
   /* line 22, ../../../radix/assets/sass/bootstrap/_mixins.scss */
   .node-event.view-mode-full .field-name-field-event-images .field-items:after {
     clear: both; }
-  /* line 118, ../sass/_node.scss */
+  /* line 121, ../sass/_node.scss */
   .node-event.view-mode-full .field-name-field-event-images .field-items .field-item {
     float: left;
     margin: 0 0 10px 10px;
