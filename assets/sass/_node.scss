@@ -110,18 +110,17 @@
 // Event
 // --------------------------------------------------
 .node-event {
-  .field {
+  &.node-featured {
     margin-bottom: 10px;
-  }
-  &.view-mode-full {
-    .field-name-field-event-images {
-      .field-items {
-        margin-left: -10px;
-        @include clearfix();
-        .field-item {
-          float: left;
-          margin: 0 0 10px 10px;
-          width: 22%;
+    .sidebar {
+      float: left;
+    }
+    .pane-node-title {
+      margin-bottom: 0;
+      .pane-content {
+        margin-bottom: 5px;
+        a {
+          font-size: 1.2em;
         }
       }
     }

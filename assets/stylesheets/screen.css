@@ -317,25 +317,20 @@ ul.tabs.secondary > .active > a, ul.action-links > .active > a {
         font-size: 1.2em; }
 
 /* line 113, ../sass/_node.scss */
-.node-event .field {
+.node-event.node-featured {
   margin-bottom: 10px; }
-/* line 118, ../sass/_node.scss */
-.node-event.view-mode-full .field-name-field-event-images .field-items {
-  margin-left: -10px;
-  *zoom: 1; }
-  /* line 15, ../../../radix/assets/sass/bootstrap/_mixins.scss */
-  .node-event.view-mode-full .field-name-field-event-images .field-items:before, .node-event.view-mode-full .field-name-field-event-images .field-items:after {
-    display: table;
-    content: "";
-    line-height: 0; }
-  /* line 22, ../../../radix/assets/sass/bootstrap/_mixins.scss */
-  .node-event.view-mode-full .field-name-field-event-images .field-items:after {
-    clear: both; }
-  /* line 121, ../sass/_node.scss */
-  .node-event.view-mode-full .field-name-field-event-images .field-items .field-item {
-    float: left;
-    margin: 0 0 10px 10px;
-    width: 22%; }
+  /* line 115, ../sass/_node.scss */
+  .node-event.node-featured .sidebar {
+    float: left; }
+  /* line 118, ../sass/_node.scss */
+  .node-event.node-featured .pane-node-title {
+    margin-bottom: 0; }
+    /* line 120, ../sass/_node.scss */
+    .node-event.node-featured .pane-node-title .pane-content {
+      margin-bottom: 5px; }
+      /* line 122, ../sass/_node.scss */
+      .node-event.node-featured .pane-node-title .pane-content a {
+        font-size: 1.2em; }
 
 /* line 6, ../sass/_maintenance.scss */
 .maintenance-page #main-wrapper #main {
