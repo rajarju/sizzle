@@ -40,7 +40,9 @@
             <a id="main-content"></a>
               <div class="page-header clearfix">
                 <h1 class="title pull-left" id="page-title"><?php print $title; ?></h1>
-                <h5 class="steps pull-right visible-desktop"><?php print $steps; ?></h5>
+                <?php if ($steps): ?>
+                  <h5 class="steps pull-right visible-desktop"><?php print $steps; ?></h5>
+                <?php endif; ?>
               </div>
           </div>
         </div>
@@ -50,7 +52,9 @@
           <?php print $sidebar_first ?>
         </div>
         <div class="span9 content">
-          <h5 class="steps visible-phone visible-tablet"><?php print $steps; ?></h5>
+          <?php if ($steps): ?>
+            <h5 class="steps visible-phone visible-tablet"><?php print $steps; ?></h5>
+          <?php endif; ?>
           <?php if ($messages): ?>
             <div id="messages">
               <?php print $messages; ?>
@@ -69,7 +73,9 @@
       <div class="row">
         <div class="span12">
           <div class="inner">
-            <p class="pull-left"><?php print $copyright ?></p>
+            <?php if ($copyright): ?>
+              <p class="pull-left"><?php print $copyright ?></p>
+            <?php endif; ?>
           </div>
         </div>
       </div>

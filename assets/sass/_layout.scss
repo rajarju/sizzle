@@ -37,6 +37,7 @@ body {
   }
   #footer {
     color: $footer-color;
+    border-top: 1px solid #F7F7F7;
     margin-bottom: 20px;
     > .container {
       background-color: $footer-background-color;
