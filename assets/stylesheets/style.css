@@ -1,14 +1,14 @@
 /*
 Syntax error: File to import not found or unreadable: responsive.
               Load paths:
-                /Users/arshad/Sites/noodlebox/sites/all/themes/sizzle/assets/sass
+                /Users/arshad/Sites/restaurant/sites/all/themes/sizzle/assets/sass
                 /usr/local/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/blueprint/stylesheets
                 /usr/local/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets
                 Compass::SpriteImporter
-        on line 7 of /Users/arshad/Sites/noodlebox/sites/all/themes/sizzle/assets/sass/style.scss
+        on line 7 of /Users/arshad/Sites/restaurant/sites/all/themes/sizzle/assets/sass/style.scss
 
 Backtrace:
-/Users/arshad/Sites/noodlebox/sites/all/themes/sizzle/assets/sass/style.scss:7
+/Users/arshad/Sites/restaurant/sites/all/themes/sizzle/assets/sass/style.scss:7
 /usr/local/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/tree/import_node.rb:64:in `rescue in import'
 /usr/local/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/tree/import_node.rb:42:in `import'
 /usr/local/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.1/lib/sass/tree/import_node.rb:25:in `imported_file'
@@ -77,4 +77,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: responsive.\A               Load paths:\A                 /Users/arshad/Sites/noodlebox/sites/all/themes/sizzle/assets/sass\A                 /usr/local/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 /usr/local/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 7 of /Users/arshad/Sites/noodlebox/sites/all/themes/sizzle/assets/sass/style.scss"; }
+  content: "Syntax error: File to import not found or unreadable: responsive.\A               Load paths:\A                 /Users/arshad/Sites/restaurant/sites/all/themes/sizzle/assets/sass\A                 /usr/local/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 /usr/local/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 7 of /Users/arshad/Sites/restaurant/sites/all/themes/sizzle/assets/sass/style.scss"; }
