@@ -60,45 +60,9 @@
   }
   .btn {
     display: inline-block;
-    background: #0071ea;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0099f1), color-stop(100%,#004be2));
-    background: -moz-linear-gradient(center top, #0099f1 0%, #004be2 100%);
-    -webkit-box-shadow: 0px 1px 0px 0px #1fa9f4 inset;
-    -moz-box-shadow: 0px 1px 0px 0px #1fa9f4 inset;
-    box-shadow: 0px 1px 0px 0px #1fa9f4 inset;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    text-shadow: 0px -1px 0px #000000;
-    padding: 10px 10px;
-    border-color: #126eaf;
-    border-width: 1px;
-    border-style: solid;
-    text-align: center;
+    padding: 10px;
     font-size: 12px;
     line-height: 22px;
-    color: #ffffff;
-  }
-  .btn:hover {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#35b6f7), color-stop(100%,#004be2));
-    background: -moz-linear-gradient(center top, #35b6f7 0%, #004be2 100%);
-    -webkit-box-shadow: 0px 1px 0px 0px #1fa9f4 inset;
-    -moz-box-shadow: 0px 1px 0px 0px #1fa9f4 inset;
-    box-shadow: 0px 1px 0px 0px #1fa9f4 inset;
-    -webkit-transition: background-color .8s ease-in-out;
-    -moz-transition: background-color .8s ease-in-out;
-    -o-transition: background-color .8s ease-in-out;
-    transition: background-color .8s ease-in-out;
-    line-height: -1px;
-  }
-  .btn:active {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#004be2), color-stop(100%,#0099f1));
-    background: -moz-linear-gradient(center top, #004be2 0%, #0099f1 100%);
-    -webkit-box-shadow: 0px 0px 8px #474747 inset;
-    -moz-box-shadow: 0px 0px 8px #474747 inset;
-    box-shadow: 0px 0px 8px #474747 inset;
-    text-shadow: 0px -1px 0px #093fab;
-    line-height: -1px;
   }
 }
 
