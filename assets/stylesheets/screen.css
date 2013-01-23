@@ -14341,13 +14341,8 @@ body #footer {
     -moz-border-radius: 0 0 4px 4px;
     border-radius: 0 0 4px 4px; }
 
-@media (min-width: 768px) and (max-width: 979px) {
-  /* line 42, ../sass/_layout.scss */
-  body #header #navigation {
-    margin-left: auto;
-    margin-right: auto; } }
 @media (max-width: 767px) {
-  /* line 53, ../sass/_layout.scss */
+  /* line 45, ../sass/_layout.scss */
   body #header #navigation {
     margin-left: auto;
     margin-right: auto; } }
