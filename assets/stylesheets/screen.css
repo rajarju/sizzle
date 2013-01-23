@@ -14312,7 +14312,7 @@ body #footer {
   margin-bottom: 20px; }
   /* line 23, ../sass/_layout.scss */
   body #footer > .container {
-    background-color: white;
+    background-color: #333333;
     border-top: 1px solid #f7f7f7;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -14396,8 +14396,9 @@ body #footer {
   text-align: center; }
   /* line 56, ../sass/_menu.scss */
   #footer .container .footer-links h3 a {
-    text-decoration: none; }
-    /* line 58, ../sass/_menu.scss */
+    text-decoration: none;
+    color: white; }
+    /* line 59, ../sass/_menu.scss */
     #footer .container .footer-links h3 a i {
       display: block;
       font-size: 3.0em;
@@ -14406,9 +14407,9 @@ body #footer {
       margin: 7px auto;
       text-align: center;
       width: auto; }
-    /* line 67, ../sass/_menu.scss */
+    /* line 68, ../sass/_menu.scss */
     #footer .container .footer-links h3 a:hover {
-      color: #005580; }
+      color: #BBBBBB; }
 
 /* line 8, ../sass/_node.scss */
 .node .field-name-title {
