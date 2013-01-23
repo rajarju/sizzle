@@ -1,3 +1,6 @@
+// Layout
+// --------------------------------------------------
+
 body {
   #header {
     #navigation {
@@ -29,6 +32,28 @@ body {
       padding-right: $gridGutterWidth;
       @include box-shadow(0 1px 4px rgba(0, 0, 0, 0.065));
       @include border-radius(0 0 4px 4px);
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) { 
+  body {
+    #header {
+      #navigation {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    #header {
+      #navigation {
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
   }
 }
