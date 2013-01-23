@@ -14325,6 +14325,42 @@ body #footer {
     -moz-border-radius: 0 0 4px 4px;
     border-radius: 0 0 4px 4px; }
 
+/* line 8, ../sass/_structure.scss */
+.pane-tagline {
+  margin: 30px auto 50px;
+  text-align: center; }
+  /* line 11, ../sass/_structure.scss */
+  .pane-tagline h3 {
+    color: #909090; }
+
+/* line 19, ../sass/_structure.scss */
+.section .section-image {
+  color: white;
+  text-align: center; }
+  /* line 22, ../sass/_structure.scss */
+  .section .section-image a {
+    background-color: #0088cc;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    display: block;
+    color: #FFFFFF;
+    padding: 30px 0;
+    text-decoration: none; }
+    /* line 29, ../sass/_structure.scss */
+    .section .section-image a:hover {
+      background-color: #005580; }
+  /* line 33, ../sass/_structure.scss */
+  .section .section-image i {
+    font-size: 150px;
+    height: auto;
+    line-height: 100%;
+    margin: 0 auto;
+    width: auto; }
+/* line 41, ../sass/_structure.scss */
+.section .section-description {
+  text-align: center; }
+
 /* line 10, ../sass/_menu.scss */
 #main-menu ul.menu > li > a {
   text-shadow: none; }
@@ -14340,6 +14376,39 @@ body #footer {
   -webkit-border-radius: 0 0 4px 4px;
   -moz-border-radius: 0 0 4px 4px;
   border-radius: 0 0 4px 4px; }
+
+/* line 40, ../sass/_menu.scss */
+#footer .container .footer-links h4 {
+  color: #666666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-left: 1px!important;
+  font-size: 11px;
+  line-height: 21px;
+  margin-bottom: 2px;
+  text-align: center; }
+/* line 50, ../sass/_menu.scss */
+#footer .container .footer-links h3 {
+  color: #BBBBBB;
+  font-size: 18px;
+  line-height: 21px;
+  margin-top: 0;
+  text-align: center; }
+  /* line 56, ../sass/_menu.scss */
+  #footer .container .footer-links h3 a {
+    text-decoration: none; }
+    /* line 58, ../sass/_menu.scss */
+    #footer .container .footer-links h3 a i {
+      display: block;
+      font-size: 3.0em;
+      height: auto;
+      line-height: 100%;
+      margin: 7px auto;
+      text-align: center;
+      width: auto; }
+    /* line 67, ../sass/_menu.scss */
+    #footer .container .footer-links h3 a:hover {
+      color: #005580; }
 
 /* line 8, ../sass/_node.scss */
 .node .field-name-title {

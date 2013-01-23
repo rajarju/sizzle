@@ -31,3 +31,44 @@
     @include border-radius(0 0 4px 4px);
   }
 }
+
+// Footer Menu
+// --------------------------------------------------
+#footer {
+  .container {
+    .footer-links {
+      h4 {
+        color: #666666;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding-left: 1px!important;
+        font-size: 11px;
+        line-height: 21px;
+        margin-bottom: 2px;
+        text-align: center;
+      }
+      h3 {
+        color: #BBBBBB;
+        font-size: 18px;
+        line-height: 21px;
+        margin-top: 0;
+        text-align: center;
+        a {
+          text-decoration: none;
+          i {
+            display: block;
+            font-size: 3.0em;
+            height: auto;
+            line-height: 100%;
+            margin: 7px auto;
+            text-align: center;
+            width: auto;
+          }
+          &:hover {
+            color: $linkColorHover;
+          }
+        }
+      }
+    }
+  }
+}

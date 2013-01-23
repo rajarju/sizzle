@@ -98,12 +98,6 @@
 
 <footer id="footer" class="footer" role="footer">
   <div class="container">
-    <div class="row">
-      <div class="span12">
-        <div class="inner">
-          <?php print render($footer_menu); ?>
-        </div>
-      </div>
-    </div>
+    <?php print $footer_links; ?>
   </div>
 </footer>
