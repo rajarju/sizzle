@@ -21,7 +21,7 @@ body {
     }
   }
   #footer {
-    color: $textColor;
+    color: lighten($textColor, 50);
     margin-bottom: 20px;
     > .container {
       background-color: $footerBackground;
