@@ -1,46 +1,28 @@
-//
-// Layout
-// Styles for main layout
-// --------------------------------------------------
-$gridGutterWidth: 20px;
-
 body {
-  background-color: $body-background-color;
   #header {
     #navigation {
       margin-top: 0;
       margin-left: 0 - $gridGutterWidth;
       margin-right: 0 - $gridGutterWidth;
-      .navbar-inner {
-        background: $navbar-background-color;
-        border-color: lighten($navbar-background-color, 20);
-        margin-top: -1px;
-        @include border-radius(0 0 4px 4px);
-        color: $navbar-color;
-        a.brand {
-          color: $brand-color;
-          text-shadow: 0 1px 0 darken($brand-color, 80);
-        }
-      }
     }
   }
   #main-wrapper {
     > .container {
-      background-color: $main-background-color;
+      background-color: $mainBackground;
       padding-top: $gridGutterWidth;
       padding-bottom: $gridGutterWidth;
       padding-left: $gridGutterWidth;
       padding-right: $gridGutterWidth;
-      @include box-shadow(0 1px 4px rgba(0, 0, 0, 0.065));
+      @include box-shadow(0 0px 4px rgba(0, 0, 0, 0.065));
       @include border-radius(4px 4px 0 0);
     }
   }
   #footer {
-    color: $footer-color;
-    border-top: 1px solid #F7F7F7;
+    color: $textColor;
     margin-bottom: 20px;
     > .container {
-      background-color: $footer-background-color;
+      background-color: $footerBackground;
+      border-top: 1px solid #F7F7F7;
       padding-top: $gridGutterWidth;
       padding-bottom: $gridGutterWidth;
       padding-left: $gridGutterWidth;

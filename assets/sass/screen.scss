@@ -1,21 +1,29 @@
 // @file
 // SASS partials import
 // --------------------------------------------------
+@import "compass";
+
+// Mixins and Variables
+// --------------------------------------------------
+@import "variable";
+@import "contrib";
+@import "mixin";
+
+// Radix
+// --------------------------------------------------
+@import "compass_radix";
 
 // Theme CSS
 // --------------------------------------------------
-@import "mixin";
-@import "color";
 @import "font";
 @import "layout";
 @import "structure";
 @import "menu";
+@import "navbar";
 @import "page";
 @import "panel";
 @import "view";
 @import "form";
+@import "comment";
 @import "node";
-
-// Other
-// --------------------------------------------------
-@import "maintenance";
+@import "user";
