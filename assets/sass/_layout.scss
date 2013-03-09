@@ -23,6 +23,7 @@ body {
   #footer {
     color: lighten($textColor, 50);
     margin-bottom: 20px;
+    margin-top: 0;
     > .container {
       background-color: $footerBackground;
       border-top: 1px solid #F7F7F7;

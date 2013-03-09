@@ -22,3 +22,9 @@ stylesheets-conditional[IE 8][all][] = assets/stylesheets/ie8.css
 
 ; Javascript
 scripts[] = assets/javascripts/script.js
+
+; Information added by drush on 2013-02-19
+version = ""
+project = "sizzle"
+datestamp = "1361285679"
+
