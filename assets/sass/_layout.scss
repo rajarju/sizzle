@@ -3,10 +3,12 @@
 
 body {
   #header {
+    margin-top: 20px;
     #navigation {
       margin-top: 0;
       margin-left: 0 - $gridGutterWidth;
       margin-right: 0 - $gridGutterWidth;
+      margin-bottom: 0px;
     }
   }
   #main-wrapper {
@@ -17,7 +19,6 @@ body {
       padding-left: $gridGutterWidth;
       padding-right: $gridGutterWidth;
       @include box-shadow(0 0px 4px rgba(0, 0, 0, 0.065));
-      @include border-radius(4px 4px 0 0);
     }
   }
   #footer {

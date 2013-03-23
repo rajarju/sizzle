@@ -9,6 +9,7 @@
     > li {
       > a {
         text-shadow: none;
+        padding: 18px 20px 18px;
         &:hover,
         &.active {
           color: $white;
@@ -28,7 +29,14 @@
 // --------------------------------------------------
 .navbar {
   .navbar-inner {
-    @include border-radius(0 0 4px 4px);
+    @include border-radius(4px 4px 0 0);
+    .brand {
+      padding-top: 18px;
+      padding-bottom: 18px;
+    }
+    .btn-navbar {
+      margin-top: 14px !important;
+    }
   }
 }
 
