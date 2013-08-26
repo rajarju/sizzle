@@ -100,11 +100,11 @@
   <div class="container">
     <div class="row">
       <div class="span12">
-        <?php if (isset($footer_menu)): ?>
-          <nav id="footer-menu" class="footer-menu">
-            <?php print render($footer_menu); ?>
-          </nav> <!-- /#footer-menu -->
-        <?php endif; ?>
+        <div class="inner">
+          <?php if (isset($copyright)): ?>
+            <p class="pull-left"><?php print $copyright ?></p>
+          <?php endif; ?>
+        </div>
       </div>
     </div>
   </div>
