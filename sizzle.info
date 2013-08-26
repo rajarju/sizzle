@@ -1,16 +1,18 @@
-name        = Sizzle
-description = A starter theme for the Restaurant Ditribution based on Radix
+name        = Radix Starter
+description = A starter theme for the Restaurant distribution based on Radix.
 screenshot  = screenshot.png
 core        = 7.x
 
 ; Base - Radix
 base theme  = radix
-;hidden = true
 
 ; Regions
 regions[sidebar_first] = Sidebar first
-regions[content]      = Content
-regions[footer]       = Footer
+regions[content] = Content
+
+; Panels
+plugins[panels][layouts] = panels/layouts
+plugins[panels][styles] = panels/styles
 
 ; CSS - General
 stylesheets[all][]     = assets/stylesheets/screen.css
@@ -22,9 +24,3 @@ stylesheets-conditional[IE 8][all][] = assets/stylesheets/ie8.css
 
 ; Javascript
 scripts[] = assets/javascripts/script.js
-
-; Information added by drush on 2013-02-19
-version = ""
-project = "sizzle"
-datestamp = "1361285679"
-

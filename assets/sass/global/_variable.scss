@@ -31,9 +31,7 @@ $purple:                #7a43b6 !default;
 
 // Scaffolding
 // -------------------------
-$bodyBackground:        #F7F7F7 !default;
-$mainBackground:        #fff !default;
-$footerBackground:      #333 !default;
+$bodyBackground:        #f7f7f7 !default;
 $textColor:             $grayDark !default;
 
 
@@ -184,13 +182,13 @@ $navbarCollapseDesktopWidth:      $navbarCollapseWidth + 1 !default;
 $navbarHeight:                    40px !default;
 $navbarBackgroundHighlight:       #08C !default;
 $navbarBackground:                darken($navbarBackgroundHighlight, 5%) !default;
-$navbarBorder:                    darken($navbarBackground, 5%) !default;
+$navbarBorder:                    darken($navbarBackground, 12%) !default;
 
 $navbarText:                      #fff !default;
 $navbarLinkColor:                 #fff !default;
 $navbarLinkColorHover:            $grayDark !default;
 $navbarLinkColorActive:           $gray !default;
-$navbarLinkBackgroundHover:       darken($navbarBackground, 5%) !default;
+$navbarLinkBackgroundHover:       transparent !default;
 $navbarLinkBackgroundActive:      darken($navbarBackground, 5%) !default;
 
 $navbarBrandColor:                $navbarLinkColor !default;

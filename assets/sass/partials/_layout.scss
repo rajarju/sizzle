@@ -1,4 +1,6 @@
+//
 // Layout
+// Styles for main layout
 // --------------------------------------------------
 
 body {
@@ -13,7 +15,7 @@ body {
   }
   #main-wrapper {
     > .container {
-      background-color: $mainBackground;
+      background-color: $white;
       padding-top: $gridGutterWidth;
       padding-bottom: $gridGutterWidth;
       padding-left: $gridGutterWidth;
@@ -26,7 +28,7 @@ body {
     margin-bottom: 20px;
     margin-top: 0;
     > .container {
-      background-color: $footerBackground;
+      background-color: $grayDark;
       border-top: 1px solid #F7F7F7;
       padding-top: $gridGutterWidth;
       padding-bottom: $gridGutterWidth;
