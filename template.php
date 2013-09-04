@@ -42,7 +42,7 @@ function sizzle_preprocess_maintenance_page(&$variables) {
   if ($install_state) {
     $variables['copyright'] = st('Drupal is a !trademark of !buytaert', array(
       '!trademark' => l(st('registered trademark'), 'http://drupal.org/trademark'),
-      '!buytaert' => l(st('Dries Buytaert'), 'http://buytaert.com'),
+      '!buytaert' => l(st('Dries Buytaert'), 'http://buytaert.net'),
     ));
 
     // Find the number of tasks to run.
