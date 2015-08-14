@@ -1,3 +1,18 @@
-// View
 // Styles for Views
-// --------------------------------------------------
+// -----------------------------------------------------------------------------
+
+// General
+// -----------------------------------------------------------------------------
+.view {
+  .view__header {
+    @extend .margin--md--bottom;
+    text-align: center;
+    h2 {
+      margin: 0 0 5px;
+    }
+  }
+  .view__footer {
+    @extend .margin--md--top;
+    text-align: center;
+  }
+}
