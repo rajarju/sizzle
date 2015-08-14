@@ -4,15 +4,15 @@
  * Template for the Menus layout.
  */
 ?>
-<div class="<?php if (!empty($classes)) { print $classes; } ?><?php if (!empty($class)) { print $class; } ?>" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
+<div class="layout layout--menus">
   <?php if ($content['slideshow']): ?>
-    <div class="panel-pane-region panel-pane-region-slideshow border--sm--bottom">
+    <div class="layout__region layout__region--slideshow border--sm--bottom">
       <?php print $content['slideshow']; ?>
     </div>
   <?php endif; ?>
 
   <?php if ($content['top']): ?>
-    <div class="panel-pane-region panel-pane-region-top padding--xs--top padding--xs--bottom">
+    <div class="layout__region layout__region--top padding--xs--top padding--xs--bottom border--sm--bottom">
       <div class="container">
         <?php print $content['top']; ?>
       </div>
@@ -20,22 +20,24 @@
   <?php endif; ?>
 
   <div class="container">
-    <div class="row padding--lg--top padding--lg--bottom">
+    <div class="row">
       <?php if ($content['left']): ?>
-        <div class="col-md-3 panel-pane-region panel-pane-region-left">
+        <div class="layout__region layout__region--left col-md-3">
           <?php print $content['left']; ?>
         </div>
       <?php endif; ?>
       <?php if ($content['contentmain']): ?>
-        <div class="col-md-9 panel-pane-region panel-pane-region-content">
-          <?php print $content['contentmain']; ?>
+        <div class="layout__region layout__region--content col-md-9">
+          <div class="padding--lg--top padding--md--left">
+            <?php print $content['contentmain']; ?>
+          </div>
         </div>
       <?php endif; ?>
     </div>
   </div>
 
   <?php if ($content['bottom']): ?>
-    <div class="panel-pane-region panel-pane-region-bottom">
+    <div class="layout__region layout__region--bottom">
       <?php print $content['bottom']; ?>
     </div>
   <?php endif; ?>

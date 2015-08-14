@@ -161,7 +161,8 @@ $directions: top, right, bottom, left;
       color: white;
       font-size: 18px;
       line-height: 120%;
-      margin-top: 15px;
+      margin: 15px auto 0;
+      max-width: 80%;
       @include bp(md) {
         font-size: 24px;
         margin-top: 45px;

@@ -4,7 +4,6 @@
  * Template for Menu node in Featured view mode.
  */
 ?>
-<?php dpm($variables); ?>
 <article class="<?php print $classes; ?>">
   <div class="menu__wrapper">
     <?php if (!empty($content['field_menu_images'])): ?>
@@ -14,13 +13,13 @@
     <?php endif; ?>
 
     <?php if (!empty($title)): ?>
-      <h4 class="menu__title">
-        <a href="<?php print $node_url; ?>"><?php print $title; ?></a>
-       </h4>
-    <?php endif; ?>
+      <a href="<?php print $node_url; ?>" class="menu__title link--overlay">
+        <h3><?php print $title; ?></h3>
 
-    <?php if (!empty($content['field_menu_teaser_text'])): ?>
-      <p class="menu__teaser-text"><?php print render($content['field_menu_teaser_text']); ?></p>
+    <?php if (!empty($content['field_menu_one_liner'])): ?>
+      <small class="menu__one-liner"><?php print render($content['field_menu_one_liner']); ?></small>
+    <?php endif; ?>
+      </a>
     <?php endif; ?>
   </div>
 

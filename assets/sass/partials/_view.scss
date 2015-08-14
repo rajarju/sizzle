@@ -16,3 +16,76 @@
     text-align: center;
   }
 }
+
+// Views Exposed Form.
+// -----------------------------------------------------------------------------
+.views-exposed-form {
+  .views-exposed-form__widget {
+    margin: 0 0 0 10px;
+    position: relative;
+    float: left;
+
+    &--textfield {
+      > label {
+        display: none;
+      }
+      input {
+        font-size: 1.0em;
+        height: 41px;
+        width: 200px;
+        @include border-radius(2px);
+      }
+    }
+
+    &--select {
+      > label {
+        @extend .btn;
+        padding: 10px 20px 8px;
+        min-width: 200px;
+        text-align: left;
+        font-weight: 600;
+        @include border-radius(2px);
+        &:before {
+          @include fa(filter);
+          font-size: 1.6em;
+          vertical-align: middle;
+          line-height: 100%;
+          width: 20px;
+        }
+      }
+      > .form-item {
+        display: none;
+        z-index: 600;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+      }
+
+      &.open {
+        > label {
+          @extend .btn--hover;
+        }
+        > .form-item {
+          display: block;
+        }
+      }
+    }
+
+    .form-submit {
+      margin-top: 0;
+    }
+
+    &#edit-location-wrapper {
+      > label {
+        &:before {
+          @include fa(map-marker);
+          font-size: 1.6em;
+          vertical-align: middle;
+          margin-right: 5px;
+          line-height: 100%;
+        }
+      }
+    }
+  }
+}

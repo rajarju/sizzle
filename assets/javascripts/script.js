@@ -20,7 +20,7 @@
         });
 
         // Make category active when scrolled to.
-        $('.view-menus > .view-content [data-menu-category]').waypoint({
+        $('.view--menus--all-menus [data-menu-category]').waypoint({
           handler: function (direction) {
             var el = $(this.element);
             var category = el.data().menuCategory;
@@ -37,14 +37,14 @@
   // Dropdown for views exposed forms.
   Drupal.behaviors.viewsFilterDropdown = {
     attach: function(context, settings) {
-      if ($('.views-exposed-widget', context).length) {
+      if ($('.views-exposed-form__widget', context).length) {
         // Remove all open class on document click.
         $(document).click(function() {
-          $('.views-exposed-widget').removeClass('open');
+          $('.views-exposed-form__widget').removeClass('open');
         });
 
         // Toggle open class on click.
-        $('.views-exposed-widget').each(function() {
+        $('.views-exposed-form__widget').each(function() {
           var $this = $(this);
           $(this).find('label').click(function(e) {
             e.stopPropagation();

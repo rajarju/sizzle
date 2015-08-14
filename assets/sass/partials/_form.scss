@@ -117,66 +117,6 @@ form {
   }
 }
 
-// Views Exposed Form.
-// -----------------------------------------------------------------------------
-.views-exposed-form {
-  .views-exposed-widgets {
-    margin: 0;
-    .views-exposed-widget {
-      margin: 0;
-      padding: 0;
-      position: relative;
-      > label {
-        @extend .btn;
-        min-width: 200px;
-        text-align: left;
-        @include border-radius(0);
-        &:before {
-          @include fa(filter);
-          font-size: 1.6em;
-          vertical-align: middle;
-          margin-right: 5px;
-          line-height: 100%;
-          width: 20px;
-        }
-      }
-      .views-widget {
-        display: none;
-        z-index: 600;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-      }
-
-      &.open {
-        > label {
-          @extend .btn--hover;
-        }
-        .views-widget {
-          display: block;
-        }
-      }
-
-      + .views-exposed-widget {
-        margin-left: 10px;
-      }
-
-      &#edit-location-wrapper {
-        > label {
-          &:before {
-            @include fa(map-marker);
-            font-size: 1.6em;
-            vertical-align: middle;
-            margin-right: 5px;
-            line-height: 100%;
-          }
-        }
-      }
-    }
-  }
-}
-
 // Other
 // -----------------------------------------------------------------------------
 .progress {

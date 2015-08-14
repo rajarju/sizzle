@@ -1,6 +1,20 @@
+// Layout: Menus
+// -----------------------------------------------------------------------------
+.layout--menus {
+  .layout__region--left {
+    @include bp(md) {
+      padding-right: 0;
+    }
+  }
+  .layout__region--content {
+    border-left: 1px solid $brand-primary;
+    min-height: 400px;
+  }
+}
+
 // Node: Menu
 // -----------------------------------------------------------------------------
-.menu {
+.node--menu {
   .menu__image {
     img {
       max-width: 100%;
@@ -40,34 +54,48 @@
     }
   }
 
+  // Featured menu.
+  &--featured {
+    .menu__wrapper {
+      border: 1px solid $brand-primary;
+      padding: 8px;
+    }
+  }
+
   // View mode: Grid.
-  &--view-mode-grid {
+  &--view-mode--grid {
     .menu__image {
       margin-bottom: 10px;
     }
   }
 
   // View mode: Grid Featured.
-  &--view-mode-grid-featured {
+  &--view-mode--grid-featured {
     .menu__title {
       font-size: 20px;
       line-height: 28px;
     }
   }
 
-  // Featured menu.
-  &.featured {
+  // View mode: Featured.
+  &--view-mode--featured {
     .menu__wrapper {
-      border: 1px solid $brand-primary;
-      padding: 8px;
+      padding: 0;
+      position: relative;
+      @include border-radius(2px);
+    }
+    .menu__image {
+      img {
+        @include border-radius(0px);
+      }
     }
   }
 }
 
 // Menu Categories
 // -----------------------------------------------------------------------------
-.vocabulary-menu-categories {
-  &.view-mode-navigation {
+.term--menu-categories {
+  &--view-mode--navigation {
     position: relative;
     &:after {
       @include fading-border(bottom);
@@ -106,25 +134,21 @@
   }
 }
 
-// Menu Categories: Navigation
+// View: Menu Categories
 // -----------------------------------------------------------------------------
-.view-menu-categories {
-  margin-top: 20px;
-  padding: 5px;
-  border: 1px solid $brand-primary;
-  @include border-radius(2px);
+.view--menu-categories--menu-categories {
+  margin-top: 50px;
   &.stuck {
     position: fixed;
     top: 0px;
-    width: 215px;
+    width: 229px;
   }
 }
 
 // View: Menus
 // -----------------------------------------------------------------------------
-.view--menu {
-  > .view-content {
-    padding-bottom: 250px;
+.view--menus--all-menus {
+  > .view__content {
     > .container {
       margin-bottom: 40px;
       position: relative;
@@ -136,22 +160,7 @@
       }
     }
   }
-
-  .vocabulary-menu-categories {
-    @extend .col-sm-12;
+  .term, .node {
     margin-bottom: 40px;
-  }
-
-  .menu {
-    margin-bottom: 40px;
-    &--view-mode-grid-featured {
-      @extend .col-sm-12;
-    }
-    &--view-mode-grid {
-      @extend .col-sm-4;
-    }
-    &--view-mode-stacked {
-      @extend .col-md-12;
-    }
   }
 }

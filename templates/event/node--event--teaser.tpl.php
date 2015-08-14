@@ -1,10 +1,12 @@
 <?php
 /**
  * @file
- * Template for Event node in Teaser view mode.
+ * Template for Event node in Featured view mode.
  */
 ?>
 <article class="<?php print $classes; ?>">
+  <?php print render($title_prefix); ?>
+  <?php print render($title_suffix); ?>
   <?php print render($content['field_event_featured_image']); ?>
 
   <a href="<?php print $node_url; ?>" class="link--overlay">
