@@ -3,7 +3,7 @@
 $plugin = array(
   'title' => t('Event node'),
   'icon' => 'layout_event_node.png',
-  'category' => t('Restaurant Radix'),
+  'category' => t('Sizzle'),
   'theme' => 'layout__event__node',
   'regions' => array(
     'slideshow' => t('Slideshow'),

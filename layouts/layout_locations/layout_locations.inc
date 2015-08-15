@@ -3,7 +3,7 @@
 $plugin = array(
   'title' => t('Locations'),
   'icon' => 'layout_locations.png',
-  'category' => t('Restaurant Radix'),
+  'category' => t('Sizzle'),
   'theme' => 'layout__locations',
   'regions' => array(
     'slideshow' => t('Slideshow'),

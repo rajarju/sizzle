@@ -3,7 +3,7 @@
 $plugin = array(
   'title' => t('Location node'),
   'icon' => 'layout_location_node.png',
-  'category' => t('Restaurant Radix'),
+  'category' => t('Sizzle'),
   'theme' => 'layout__location__node',
   'regions' => array(
     'slideshow' => t('Slideshow'),

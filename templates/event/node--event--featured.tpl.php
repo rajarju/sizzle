@@ -5,7 +5,11 @@
  */
 ?>
 <article class="<?php print $classes; ?>">
-  <?php print render($content['field_event_featured_image']); ?>
+  <?php if (!empty($content['field_event_images'])): ?>
+    <div class="event__images">
+      <?php print render($content['field_event_images']); ?>
+    </div>
+  <?php endif; ?>
 
   <a href="<?php print $node_url; ?>" class="link--overlay">
     <h3><?php print $title; ?></h3>

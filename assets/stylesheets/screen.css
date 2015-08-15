@@ -869,8 +869,10 @@ th {
     display: none;
   }
 
-  .btn > .caret, .views-exposed-form .views-exposed-form__widget--select > label > .caret,
+  .btn > .caret, .nav-tabs li a > .caret, .nav--tabs li a > .caret, .views-exposed-form .views-exposed-form__widget--select > label > .caret,
   .dropup > .btn > .caret,
+  .nav-tabs li .dropup > a > .caret,
+  .nav--tabs li .dropup > a > .caret,
   .views-exposed-form .views-exposed-form__widget--select.dropup > label > .caret {
     border-top-color: #000 !important;
   }
@@ -3903,9 +3905,13 @@ input[type="checkbox"] {
 .form-control-static.input-lg, .input-group-lg > .form-control-static.form-control,
 .input-group-lg > .form-control-static.input-group-addon,
 .input-group-lg > .input-group-btn > .form-control-static.btn,
+.nav-tabs li .input-group-lg > .input-group-btn > a.form-control-static,
+.nav--tabs li .input-group-lg > .input-group-btn > a.form-control-static,
 .views-exposed-form .input-group-lg > .views-exposed-form__widget--select.input-group-btn > label.form-control-static, .form-control-static.input-sm, .input-group-sm > .form-control-static.form-control,
 .input-group-sm > .form-control-static.input-group-addon,
 .input-group-sm > .input-group-btn > .form-control-static.btn,
+.nav-tabs li .input-group-sm > .input-group-btn > a.form-control-static,
+.nav--tabs li .input-group-sm > .input-group-btn > a.form-control-static,
 .views-exposed-form .input-group-sm > .views-exposed-form__widget--select.input-group-btn > label.form-control-static {
   padding-left: 0;
   padding-right: 0;
@@ -3914,6 +3920,8 @@ input[type="checkbox"] {
 .input-sm, .input-group-sm > .form-control,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn,
+.nav-tabs li .input-group-sm > .input-group-btn > a,
+.nav--tabs li .input-group-sm > .input-group-btn > a,
 .views-exposed-form .input-group-sm > .views-exposed-form__widget--select.input-group-btn > label {
   height: 27px;
   padding: 5px 10px;
@@ -3965,6 +3973,8 @@ select[multiple].input-sm,
 .input-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn,
+.nav-tabs li .input-group-lg > .input-group-btn > a,
+.nav--tabs li .input-group-lg > .input-group-btn > a,
 .views-exposed-form .input-group-lg > .views-exposed-form__widget--select.input-group-btn > label {
   height: 45px;
   padding: 10px 16px;
@@ -4036,6 +4046,8 @@ select[multiple].input-lg,
 .input-lg + .form-control-feedback, .input-group-lg > .form-control + .form-control-feedback,
 .input-group-lg > .input-group-addon + .form-control-feedback,
 .input-group-lg > .input-group-btn > .btn + .form-control-feedback,
+.nav-tabs li .input-group-lg > .input-group-btn > a + .form-control-feedback,
+.nav--tabs li .input-group-lg > .input-group-btn > a + .form-control-feedback,
 .views-exposed-form .input-group-lg > .views-exposed-form__widget--select.input-group-btn > label + .form-control-feedback {
   width: 45px;
   height: 45px;
@@ -4045,6 +4057,8 @@ select[multiple].input-lg,
 .input-sm + .form-control-feedback, .input-group-sm > .form-control + .form-control-feedback,
 .input-group-sm > .input-group-addon + .form-control-feedback,
 .input-group-sm > .input-group-btn > .btn + .form-control-feedback,
+.nav-tabs li .input-group-sm > .input-group-btn > a + .form-control-feedback,
+.nav--tabs li .input-group-sm > .input-group-btn > a + .form-control-feedback,
 .views-exposed-form .input-group-sm > .views-exposed-form__widget--select.input-group-btn > label + .form-control-feedback {
   width: 27px;
   height: 27px;
@@ -4241,7 +4255,7 @@ select[multiple].input-lg,
   }
 }
 
-.btn, .views-exposed-form .views-exposed-form__widget--select > label {
+.btn, .nav-tabs li a, .nav--tabs li a, .views-exposed-form .views-exposed-form__widget--select > label {
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -4261,22 +4275,22 @@ select[multiple].input-lg,
   -ms-user-select: none;
   user-select: none;
 }
-.btn:focus, .views-exposed-form .views-exposed-form__widget--select > label:focus, .btn.focus, .views-exposed-form .views-exposed-form__widget--select > label.focus, .btn:active:focus, .views-exposed-form .views-exposed-form__widget--select > label:active:focus, .btn:active.focus, .views-exposed-form .views-exposed-form__widget--select > label:active.focus, .btn.active:focus, .views-exposed-form .views-exposed-form__widget--select > label.active:focus, .btn.active.focus, .views-exposed-form .views-exposed-form__widget--select > label.active.focus {
+.btn:focus, .nav-tabs li a:focus, .nav--tabs li a:focus, .views-exposed-form .views-exposed-form__widget--select > label:focus, .btn.focus, .nav-tabs li a.focus, .nav--tabs li a.focus, .views-exposed-form .views-exposed-form__widget--select > label.focus, .btn:active:focus, .nav-tabs li a:active:focus, .nav--tabs li a:active:focus, .views-exposed-form .views-exposed-form__widget--select > label:active:focus, .btn:active.focus, .nav-tabs li a:active.focus, .nav--tabs li a:active.focus, .views-exposed-form .views-exposed-form__widget--select > label:active.focus, .btn.active:focus, .nav-tabs li a.active:focus, .nav--tabs li a.active:focus, .views-exposed-form .views-exposed-form__widget--select > label.active:focus, .btn.active.focus, .nav-tabs li a.active.focus, .nav--tabs li a.active.focus, .views-exposed-form .views-exposed-form__widget--select > label.active.focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-.btn:hover, .views-exposed-form .views-exposed-form__widget--select > label:hover, .btn:focus, .views-exposed-form .views-exposed-form__widget--select > label:focus, .btn.focus, .views-exposed-form .views-exposed-form__widget--select > label.focus {
+.btn:hover, .nav-tabs li a:hover, .nav--tabs li a:hover, .views-exposed-form .views-exposed-form__widget--select > label:hover, .btn:focus, .nav-tabs li a:focus, .nav--tabs li a:focus, .views-exposed-form .views-exposed-form__widget--select > label:focus, .btn.focus, .nav-tabs li a.focus, .nav--tabs li a.focus, .views-exposed-form .views-exposed-form__widget--select > label.focus {
   color: #333;
   text-decoration: none;
 }
-.btn:active, .views-exposed-form .views-exposed-form__widget--select > label:active, .btn.active, .views-exposed-form .views-exposed-form__widget--select > label.active {
+.btn:active, .nav-tabs li a:active, .nav--tabs li a:active, .views-exposed-form .views-exposed-form__widget--select > label:active, .btn.active, .nav-tabs li a.active, .nav--tabs li a.active, .views-exposed-form .views-exposed-form__widget--select > label.active {
   outline: 0;
   background-image: none;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
-.btn.disabled, .views-exposed-form .views-exposed-form__widget--select > label.disabled, .btn[disabled], .views-exposed-form .views-exposed-form__widget--select > label[disabled], fieldset[disabled] .btn, fieldset[disabled] .views-exposed-form .views-exposed-form__widget--select > label, .views-exposed-form fieldset[disabled] .views-exposed-form__widget--select > label {
+.btn.disabled, .nav-tabs li a.disabled, .nav--tabs li a.disabled, .views-exposed-form .views-exposed-form__widget--select > label.disabled, .btn[disabled], .nav-tabs li a[disabled], .nav--tabs li a[disabled], .views-exposed-form .views-exposed-form__widget--select > label[disabled], fieldset[disabled] .btn, fieldset[disabled] .nav-tabs li a, .nav-tabs li fieldset[disabled] a, fieldset[disabled] .nav--tabs li a, .nav--tabs li fieldset[disabled] a, fieldset[disabled] .views-exposed-form .views-exposed-form__widget--select > label, .views-exposed-form fieldset[disabled] .views-exposed-form__widget--select > label {
   cursor: not-allowed;
   pointer-events: none;
   opacity: 0.65;
@@ -4440,21 +4454,21 @@ select[multiple].input-lg,
   text-decoration: none;
 }
 
-.btn-lg, .btn-group-lg > .btn, .views-exposed-form .views-exposed-form__widget--select.btn-group-lg > label {
+.btn-lg, .btn-group-lg > .btn, .nav-tabs li .btn-group-lg > a, .nav--tabs li .btn-group-lg > a, .views-exposed-form .views-exposed-form__widget--select.btn-group-lg > label {
   padding: 10px 16px;
   font-size: 17px;
   line-height: 1.33;
   border-radius: 6px;
 }
 
-.btn-sm, .btn-group-sm > .btn, .views-exposed-form .views-exposed-form__widget--select.btn-group-sm > label {
+.btn-sm, .btn-group-sm > .btn, .nav-tabs li .btn-group-sm > a, .nav--tabs li .btn-group-sm > a, .views-exposed-form .views-exposed-form__widget--select.btn-group-sm > label {
   padding: 5px 10px;
   font-size: 10px;
   line-height: 1.5;
   border-radius: 2px;
 }
 
-.btn-xs, .btn-group-xs > .btn, .views-exposed-form .views-exposed-form__widget--select.btn-group-xs > label {
+.btn-xs, .btn-group-xs > .btn, .nav-tabs li .btn-group-xs > a, .nav--tabs li .btn-group-xs > a, .views-exposed-form .views-exposed-form__widget--select.btn-group-xs > label {
   padding: 1px 5px;
   font-size: 10px;
   line-height: 1.5;
@@ -4667,29 +4681,47 @@ tbody.collapse.in {
   display: inline-block;
   vertical-align: middle;
 }
-.btn-group > .btn, .views-exposed-form .views-exposed-form__widget--select.btn-group > label,
+.btn-group > .btn, .nav-tabs li .btn-group > a, .nav--tabs li .btn-group > a, .views-exposed-form .views-exposed-form__widget--select.btn-group > label,
 .btn-group-vertical > .btn,
+.nav-tabs li .btn-group-vertical > a,
+.nav--tabs li .btn-group-vertical > a,
 .views-exposed-form .views-exposed-form__widget--select.btn-group-vertical > label {
   position: relative;
   float: left;
 }
-.btn-group > .btn:hover, .views-exposed-form .views-exposed-form__widget--select.btn-group > label:hover, .btn-group > .btn:focus, .views-exposed-form .views-exposed-form__widget--select.btn-group > label:focus, .btn-group > .btn:active, .views-exposed-form .views-exposed-form__widget--select.btn-group > label:active, .btn-group > .btn.active, .views-exposed-form .views-exposed-form__widget--select.btn-group > label.active,
+.btn-group > .btn:hover, .nav-tabs li .btn-group > a:hover, .nav--tabs li .btn-group > a:hover, .views-exposed-form .views-exposed-form__widget--select.btn-group > label:hover, .btn-group > .btn:focus, .nav-tabs li .btn-group > a:focus, .nav--tabs li .btn-group > a:focus, .views-exposed-form .views-exposed-form__widget--select.btn-group > label:focus, .btn-group > .btn:active, .nav-tabs li .btn-group > a:active, .nav--tabs li .btn-group > a:active, .views-exposed-form .views-exposed-form__widget--select.btn-group > label:active, .btn-group > .btn.active, .nav-tabs li .btn-group > a.active, .nav--tabs li .btn-group > a.active, .views-exposed-form .views-exposed-form__widget--select.btn-group > label.active,
 .btn-group-vertical > .btn:hover,
+.nav-tabs li .btn-group-vertical > a:hover,
+.nav--tabs li .btn-group-vertical > a:hover,
 .views-exposed-form .views-exposed-form__widget--select.btn-group-vertical > label:hover,
 .btn-group-vertical > .btn:focus,
+.nav-tabs li .btn-group-vertical > a:focus,
+.nav--tabs li .btn-group-vertical > a:focus,
 .views-exposed-form .views-exposed-form__widget--select.btn-group-vertical > label:focus,
 .btn-group-vertical > .btn:active,
+.nav-tabs li .btn-group-vertical > a:active,
+.nav--tabs li .btn-group-vertical > a:active,
 .views-exposed-form .views-exposed-form__widget--select.btn-group-vertical > label:active,
 .btn-group-vertical > .btn.active,
+.nav-tabs li .btn-group-vertical > a.active,
+.nav--tabs li .btn-group-vertical > a.active,
 .views-exposed-form .views-exposed-form__widget--select.btn-group-vertical > label.active {
   z-index: 2;
 }
 
-.btn-group .btn + .btn, .btn-group .views-exposed-form .views-exposed-form__widget--select > label + .btn, .views-exposed-form .btn-group .views-exposed-form__widget--select > label + .btn, .btn-group .views-exposed-form .views-exposed-form__widget--select > .btn + label, .views-exposed-form .btn-group .views-exposed-form__widget--select > .btn + label, .btn-group .views-exposed-form .views-exposed-form__widget--select > label + label, .views-exposed-form .btn-group .views-exposed-form__widget--select > label + label,
+.btn-group .btn + .btn, .btn-group .nav-tabs li a + .btn, .nav-tabs li .btn-group a + .btn, .btn-group .nav--tabs li a + .btn, .nav--tabs li .btn-group a + .btn, .btn-group .views-exposed-form .views-exposed-form__widget--select > label + .btn, .views-exposed-form .btn-group .views-exposed-form__widget--select > label + .btn, .btn-group .nav-tabs li .btn + a, .nav-tabs li .btn-group .btn + a, .btn-group .nav-tabs li a + a, .nav-tabs li .btn-group a + a, .btn-group .nav--tabs .nav-tabs li a + a, .nav-tabs .btn-group .nav--tabs li a + a, .btn-group .views-exposed-form .nav-tabs li .views-exposed-form__widget--select > label + a, .nav-tabs li .btn-group .views-exposed-form .views-exposed-form__widget--select > label + a, .views-exposed-form .btn-group .nav-tabs li .views-exposed-form__widget--select > label + a, .nav-tabs li .views-exposed-form .btn-group .views-exposed-form__widget--select > label + a, .btn-group .nav--tabs li .btn + a, .nav--tabs li .btn-group .btn + a, .btn-group .nav-tabs .nav--tabs li a + a, .nav--tabs .btn-group .nav-tabs li a + a, .nav-tabs .nav--tabs li .btn-group a + a, .nav--tabs .nav-tabs li .btn-group a + a, .btn-group .nav--tabs li a + a, .nav--tabs li .btn-group a + a, .btn-group .views-exposed-form .nav--tabs li .views-exposed-form__widget--select > label + a, .nav--tabs li .btn-group .views-exposed-form .views-exposed-form__widget--select > label + a, .views-exposed-form .btn-group .nav--tabs li .views-exposed-form__widget--select > label + a, .nav--tabs li .views-exposed-form .btn-group .views-exposed-form__widget--select > label + a, .btn-group .views-exposed-form .views-exposed-form__widget--select > .btn + label, .views-exposed-form .btn-group .views-exposed-form__widget--select > .btn + label, .btn-group .nav-tabs li .views-exposed-form .views-exposed-form__widget--select > a + label, .views-exposed-form .btn-group .nav-tabs li .views-exposed-form__widget--select > a + label, .nav-tabs li .btn-group .views-exposed-form .views-exposed-form__widget--select > a + label, .views-exposed-form .nav-tabs li .btn-group .views-exposed-form__widget--select > a + label, .btn-group .nav--tabs li .views-exposed-form .views-exposed-form__widget--select > a + label, .views-exposed-form .btn-group .nav--tabs li .views-exposed-form__widget--select > a + label, .nav--tabs li .btn-group .views-exposed-form .views-exposed-form__widget--select > a + label, .views-exposed-form .nav--tabs li .btn-group .views-exposed-form__widget--select > a + label, .btn-group .views-exposed-form .views-exposed-form__widget--select > label + label, .views-exposed-form .btn-group .views-exposed-form__widget--select > label + label,
 .btn-group .btn + .btn-group,
+.btn-group .nav-tabs li a + .btn-group,
+.nav-tabs li .btn-group a + .btn-group,
+.btn-group .nav--tabs li a + .btn-group,
+.nav--tabs li .btn-group a + .btn-group,
 .btn-group .views-exposed-form .views-exposed-form__widget--select > label + .btn-group,
 .views-exposed-form .btn-group .views-exposed-form__widget--select > label + .btn-group,
 .btn-group .btn-group + .btn,
+.btn-group .nav-tabs li .btn-group + a,
+.nav-tabs li .btn-group .btn-group + a,
+.btn-group .nav--tabs li .btn-group + a,
+.nav--tabs li .btn-group .btn-group + a,
 .btn-group .views-exposed-form .views-exposed-form__widget--select > .btn-group + label,
 .views-exposed-form .btn-group .views-exposed-form__widget--select > .btn-group + label,
 .btn-group .btn-group + .btn-group {
@@ -4710,25 +4742,25 @@ tbody.collapse.in {
 .btn-toolbar .input-group {
   float: left;
 }
-.btn-toolbar > .btn, .views-exposed-form .views-exposed-form__widget--select.btn-toolbar > label,
+.btn-toolbar > .btn, .nav-tabs li .btn-toolbar > a, .nav--tabs li .btn-toolbar > a, .views-exposed-form .views-exposed-form__widget--select.btn-toolbar > label,
 .btn-toolbar > .btn-group,
 .btn-toolbar > .input-group {
   margin-left: 5px;
 }
 
-.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .views-exposed-form .views-exposed-form__widget--select.btn-group > label:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .nav-tabs li .btn-group > a:not(:first-child):not(:last-child):not(.dropdown-toggle), .nav--tabs li .btn-group > a:not(:first-child):not(:last-child):not(.dropdown-toggle), .views-exposed-form .views-exposed-form__widget--select.btn-group > label:not(:first-child):not(:last-child):not(.dropdown-toggle) {
   border-radius: 0;
 }
 
-.btn-group > .btn:first-child, .views-exposed-form .views-exposed-form__widget--select.btn-group > label:first-child {
+.btn-group > .btn:first-child, .nav-tabs li .btn-group > a:first-child, .nav--tabs li .btn-group > a:first-child, .views-exposed-form .views-exposed-form__widget--select.btn-group > label:first-child {
   margin-left: 0;
 }
-.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), .views-exposed-form .views-exposed-form__widget--select.btn-group > label:first-child:not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), .nav-tabs li .btn-group > a:first-child:not(:last-child):not(.dropdown-toggle), .nav--tabs li .btn-group > a:first-child:not(:last-child):not(.dropdown-toggle), .views-exposed-form .views-exposed-form__widget--select.btn-group > label:first-child:not(:last-child):not(.dropdown-toggle) {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
-.btn-group > .btn:last-child:not(:first-child), .views-exposed-form .views-exposed-form__widget--select.btn-group > label:last-child:not(:first-child),
+.btn-group > .btn:last-child:not(:first-child), .nav-tabs li .btn-group > a:last-child:not(:first-child), .nav--tabs li .btn-group > a:last-child:not(:first-child), .views-exposed-form .views-exposed-form__widget--select.btn-group > label:last-child:not(:first-child),
 .btn-group > .dropdown-toggle:not(:first-child) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
@@ -4738,17 +4770,17 @@ tbody.collapse.in {
   float: left;
 }
 
-.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, .views-exposed-form .btn-group > .views-exposed-form__widget--select.btn-group:not(:first-child):not(:last-child) > label {
+.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, .nav-tabs li .btn-group > .btn-group:not(:first-child):not(:last-child) > a, .nav--tabs li .btn-group > .btn-group:not(:first-child):not(:last-child) > a, .views-exposed-form .btn-group > .views-exposed-form__widget--select.btn-group:not(:first-child):not(:last-child) > label {
   border-radius: 0;
 }
 
-.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child, .views-exposed-form .btn-group > .views-exposed-form__widget--select.btn-group:first-child:not(:last-child) > label:last-child,
+.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child, .nav-tabs li .btn-group > .btn-group:first-child:not(:last-child) > a:last-child, .nav--tabs li .btn-group > .btn-group:first-child:not(:last-child) > a:last-child, .views-exposed-form .btn-group > .views-exposed-form__widget--select.btn-group:first-child:not(:last-child) > label:last-child,
 .btn-group > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
-.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child, .views-exposed-form .btn-group > .views-exposed-form__widget--select.btn-group:last-child:not(:first-child) > label:first-child {
+.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child, .nav-tabs li .btn-group > .btn-group:last-child:not(:first-child) > a:first-child, .nav--tabs li .btn-group > .btn-group:last-child:not(:first-child) > a:first-child, .views-exposed-form .btn-group > .views-exposed-form__widget--select.btn-group:last-child:not(:first-child) > label:first-child {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -4758,12 +4790,12 @@ tbody.collapse.in {
   outline: 0;
 }
 
-.btn-group > .btn + .dropdown-toggle, .views-exposed-form .views-exposed-form__widget--select.btn-group > label + .dropdown-toggle {
+.btn-group > .btn + .dropdown-toggle, .nav-tabs li .btn-group > a + .dropdown-toggle, .nav--tabs li .btn-group > a + .dropdown-toggle, .views-exposed-form .views-exposed-form__widget--select.btn-group > label + .dropdown-toggle {
   padding-left: 8px;
   padding-right: 8px;
 }
 
-.btn-group > .btn-lg + .dropdown-toggle, .btn-group-lg.btn-group > .btn + .dropdown-toggle, .views-exposed-form .views-exposed-form__widget--select.btn-group-lg.btn-group > label + .dropdown-toggle {
+.btn-group > .btn-lg + .dropdown-toggle, .btn-group-lg.btn-group > .btn + .dropdown-toggle, .nav-tabs li .btn-group-lg.btn-group > a + .dropdown-toggle, .nav--tabs li .btn-group-lg.btn-group > a + .dropdown-toggle, .views-exposed-form .views-exposed-form__widget--select.btn-group-lg.btn-group > label + .dropdown-toggle {
   padding-left: 12px;
   padding-right: 12px;
 }
@@ -4777,22 +4809,24 @@ tbody.collapse.in {
   box-shadow: none;
 }
 
-.btn .caret, .views-exposed-form .views-exposed-form__widget--select > label .caret {
+.btn .caret, .nav-tabs li a .caret, .nav--tabs li a .caret, .views-exposed-form .views-exposed-form__widget--select > label .caret {
   margin-left: 0;
 }
 
-.btn-lg .caret, .btn-group-lg > .btn .caret, .views-exposed-form .views-exposed-form__widget--select.btn-group-lg > label .caret {
+.btn-lg .caret, .btn-group-lg > .btn .caret, .nav-tabs li .btn-group-lg > a .caret, .nav--tabs li .btn-group-lg > a .caret, .views-exposed-form .views-exposed-form__widget--select.btn-group-lg > label .caret {
   border-width: 5px 5px 0;
   border-bottom-width: 0;
 }
 
-.dropup .btn-lg .caret, .dropup .btn-group-lg > .btn .caret, .dropup .views-exposed-form .views-exposed-form__widget--select.btn-group-lg > label .caret, .views-exposed-form .dropup .views-exposed-form__widget--select.btn-group-lg > label .caret {
+.dropup .btn-lg .caret, .dropup .btn-group-lg > .btn .caret, .dropup .nav-tabs li .btn-group-lg > a .caret, .nav-tabs li .dropup .btn-group-lg > a .caret, .dropup .nav--tabs li .btn-group-lg > a .caret, .nav--tabs li .dropup .btn-group-lg > a .caret, .dropup .views-exposed-form .views-exposed-form__widget--select.btn-group-lg > label .caret, .views-exposed-form .dropup .views-exposed-form__widget--select.btn-group-lg > label .caret {
   border-width: 0 5px 5px;
 }
 
-.btn-group-vertical > .btn, .views-exposed-form .views-exposed-form__widget--select.btn-group-vertical > label,
+.btn-group-vertical > .btn, .nav-tabs li .btn-group-vertical > a, .nav--tabs li .btn-group-vertical > a, .views-exposed-form .views-exposed-form__widget--select.btn-group-vertical > label,
 .btn-group-vertical > .btn-group,
 .btn-group-vertical > .btn-group > .btn,
+.nav-tabs li .btn-group-vertical > .btn-group > a,
+.nav--tabs li .btn-group-vertical > .btn-group > a,
 .views-exposed-form .btn-group-vertical > .views-exposed-form__widget--select.btn-group > label {
   display: block;
   float: none;
@@ -4806,44 +4840,48 @@ tbody.collapse.in {
 .btn-group-vertical > .btn-group:after {
   clear: both;
 }
-.btn-group-vertical > .btn-group > .btn, .views-exposed-form .btn-group-vertical > .views-exposed-form__widget--select.btn-group > label {
+.btn-group-vertical > .btn-group > .btn, .nav-tabs li .btn-group-vertical > .btn-group > a, .nav--tabs li .btn-group-vertical > .btn-group > a, .views-exposed-form .btn-group-vertical > .views-exposed-form__widget--select.btn-group > label {
   float: none;
 }
-.btn-group-vertical > .btn + .btn, .views-exposed-form .views-exposed-form__widget--select.btn-group-vertical > label + .btn, .views-exposed-form .views-exposed-form__widget--select.btn-group-vertical > .btn + label, .views-exposed-form .views-exposed-form__widget--select.btn-group-vertical > label + label,
+.btn-group-vertical > .btn + .btn, .nav-tabs li .btn-group-vertical > a + .btn, .nav--tabs li .btn-group-vertical > a + .btn, .views-exposed-form .views-exposed-form__widget--select.btn-group-vertical > label + .btn, .nav-tabs li .btn-group-vertical > .btn + a, .nav-tabs li .btn-group-vertical > a + a, .views-exposed-form .nav-tabs li .views-exposed-form__widget--select.btn-group-vertical > label + a, .nav-tabs li .views-exposed-form .views-exposed-form__widget--select.btn-group-vertical > label + a, .nav--tabs li .btn-group-vertical > .btn + a, .nav-tabs .nav--tabs li .btn-group-vertical > a + a, .nav--tabs .nav-tabs li .btn-group-vertical > a + a, .nav--tabs li .btn-group-vertical > a + a, .views-exposed-form .nav--tabs li .views-exposed-form__widget--select.btn-group-vertical > label + a, .nav--tabs li .views-exposed-form .views-exposed-form__widget--select.btn-group-vertical > label + a, .views-exposed-form .views-exposed-form__widget--select.btn-group-vertical > .btn + label, .nav-tabs li .views-exposed-form .views-exposed-form__widget--select.btn-group-vertical > a + label, .views-exposed-form .nav-tabs li .views-exposed-form__widget--select.btn-group-vertical > a + label, .nav--tabs li .views-exposed-form .views-exposed-form__widget--select.btn-group-vertical > a + label, .views-exposed-form .nav--tabs li .views-exposed-form__widget--select.btn-group-vertical > a + label, .views-exposed-form .views-exposed-form__widget--select.btn-group-vertical > label + label,
 .btn-group-vertical > .btn + .btn-group,
+.nav-tabs li .btn-group-vertical > a + .btn-group,
+.nav--tabs li .btn-group-vertical > a + .btn-group,
 .views-exposed-form .views-exposed-form__widget--select.btn-group-vertical > label + .btn-group,
 .btn-group-vertical > .btn-group + .btn,
+.nav-tabs li .btn-group-vertical > .btn-group + a,
+.nav--tabs li .btn-group-vertical > .btn-group + a,
 .views-exposed-form .views-exposed-form__widget--select.btn-group-vertical > .btn-group + label,
 .btn-group-vertical > .btn-group + .btn-group {
   margin-top: -1px;
   margin-left: 0;
 }
 
-.btn-group-vertical > .btn:not(:first-child):not(:last-child), .views-exposed-form .views-exposed-form__widget--select.btn-group-vertical > label:not(:first-child):not(:last-child) {
+.btn-group-vertical > .btn:not(:first-child):not(:last-child), .nav-tabs li .btn-group-vertical > a:not(:first-child):not(:last-child), .nav--tabs li .btn-group-vertical > a:not(:first-child):not(:last-child), .views-exposed-form .views-exposed-form__widget--select.btn-group-vertical > label:not(:first-child):not(:last-child) {
   border-radius: 0;
 }
-.btn-group-vertical > .btn:first-child:not(:last-child), .views-exposed-form .views-exposed-form__widget--select.btn-group-vertical > label:first-child:not(:last-child) {
+.btn-group-vertical > .btn:first-child:not(:last-child), .nav-tabs li .btn-group-vertical > a:first-child:not(:last-child), .nav--tabs li .btn-group-vertical > a:first-child:not(:last-child), .views-exposed-form .views-exposed-form__widget--select.btn-group-vertical > label:first-child:not(:last-child) {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-.btn-group-vertical > .btn:last-child:not(:first-child), .views-exposed-form .views-exposed-form__widget--select.btn-group-vertical > label:last-child:not(:first-child) {
+.btn-group-vertical > .btn:last-child:not(:first-child), .nav-tabs li .btn-group-vertical > a:last-child:not(:first-child), .nav--tabs li .btn-group-vertical > a:last-child:not(:first-child), .views-exposed-form .views-exposed-form__widget--select.btn-group-vertical > label:last-child:not(:first-child) {
   border-bottom-left-radius: 3px;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
 
-.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, .views-exposed-form .btn-group-vertical > .views-exposed-form__widget--select.btn-group:not(:first-child):not(:last-child) > label {
+.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, .nav-tabs li .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > a, .nav--tabs li .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > a, .views-exposed-form .btn-group-vertical > .views-exposed-form__widget--select.btn-group:not(:first-child):not(:last-child) > label {
   border-radius: 0;
 }
 
-.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, .views-exposed-form .btn-group-vertical > .views-exposed-form__widget--select.btn-group:first-child:not(:last-child) > label:last-child,
+.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, .nav-tabs li .btn-group-vertical > .btn-group:first-child:not(:last-child) > a:last-child, .nav--tabs li .btn-group-vertical > .btn-group:first-child:not(:last-child) > a:last-child, .views-exposed-form .btn-group-vertical > .views-exposed-form__widget--select.btn-group:first-child:not(:last-child) > label:last-child,
 .btn-group-vertical > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, .views-exposed-form .btn-group-vertical > .views-exposed-form__widget--select.btn-group:last-child:not(:first-child) > label:first-child {
+.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, .nav-tabs li .btn-group-vertical > .btn-group:last-child:not(:first-child) > a:first-child, .nav--tabs li .btn-group-vertical > .btn-group:last-child:not(:first-child) > a:first-child, .views-exposed-form .btn-group-vertical > .views-exposed-form__widget--select.btn-group:last-child:not(:first-child) > label:first-child {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
@@ -4854,25 +4892,31 @@ tbody.collapse.in {
   table-layout: fixed;
   border-collapse: separate;
 }
-.btn-group-justified > .btn, .views-exposed-form .views-exposed-form__widget--select.btn-group-justified > label,
+.btn-group-justified > .btn, .nav-tabs li .btn-group-justified > a, .nav--tabs li .btn-group-justified > a, .views-exposed-form .views-exposed-form__widget--select.btn-group-justified > label,
 .btn-group-justified > .btn-group {
   float: none;
   display: table-cell;
   width: 1%;
 }
-.btn-group-justified > .btn-group .btn, .btn-group-justified > .btn-group .views-exposed-form .views-exposed-form__widget--select > label, .views-exposed-form .btn-group-justified > .btn-group .views-exposed-form__widget--select > label {
+.btn-group-justified > .btn-group .btn, .btn-group-justified > .btn-group .nav-tabs li a, .nav-tabs li .btn-group-justified > .btn-group a, .btn-group-justified > .btn-group .nav--tabs li a, .nav--tabs li .btn-group-justified > .btn-group a, .btn-group-justified > .btn-group .views-exposed-form .views-exposed-form__widget--select > label, .views-exposed-form .btn-group-justified > .btn-group .views-exposed-form__widget--select > label {
   width: 100%;
 }
 .btn-group-justified > .btn-group .dropdown-menu {
   left: auto;
 }
 
-[data-toggle="buttons"] > .btn input[type="radio"], .views-exposed-form .views-exposed-form__widget--select[data-toggle="buttons"] > label input[type="radio"],
+[data-toggle="buttons"] > .btn input[type="radio"], .nav-tabs li [data-toggle="buttons"] > a input[type="radio"], .nav--tabs li [data-toggle="buttons"] > a input[type="radio"], .views-exposed-form .views-exposed-form__widget--select[data-toggle="buttons"] > label input[type="radio"],
 [data-toggle="buttons"] > .btn input[type="checkbox"],
+.nav-tabs li [data-toggle="buttons"] > a input[type="checkbox"],
+.nav--tabs li [data-toggle="buttons"] > a input[type="checkbox"],
 .views-exposed-form .views-exposed-form__widget--select[data-toggle="buttons"] > label input[type="checkbox"],
 [data-toggle="buttons"] > .btn-group > .btn input[type="radio"],
+.nav-tabs li [data-toggle="buttons"] > .btn-group > a input[type="radio"],
+.nav--tabs li [data-toggle="buttons"] > .btn-group > a input[type="radio"],
 .views-exposed-form [data-toggle="buttons"] > .views-exposed-form__widget--select.btn-group > label input[type="radio"],
 [data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"],
+.nav-tabs li [data-toggle="buttons"] > .btn-group > a input[type="checkbox"],
+.nav--tabs li [data-toggle="buttons"] > .btn-group > a input[type="checkbox"],
 .views-exposed-form [data-toggle="buttons"] > .views-exposed-form__widget--select.btn-group > label input[type="checkbox"] {
   position: absolute;
   clip: rect(0, 0, 0, 0);
@@ -4929,6 +4973,8 @@ tbody.collapse.in {
 .input-group-addon.input-sm,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .input-group-addon.btn,
+.nav-tabs li .input-group-sm > .input-group-btn > a.input-group-addon,
+.nav--tabs li .input-group-sm > .input-group-btn > a.input-group-addon,
 .views-exposed-form .input-group-sm > .views-exposed-form__widget--select.input-group-btn > label.input-group-addon {
   padding: 5px 10px;
   font-size: 10px;
@@ -4937,6 +4983,8 @@ tbody.collapse.in {
 .input-group-addon.input-lg,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .input-group-addon.btn,
+.nav-tabs li .input-group-lg > .input-group-btn > a.input-group-addon,
+.nav--tabs li .input-group-lg > .input-group-btn > a.input-group-addon,
 .views-exposed-form .input-group-lg > .views-exposed-form__widget--select.input-group-btn > label.input-group-addon {
   padding: 10px 16px;
   font-size: 17px;
@@ -4950,13 +4998,21 @@ tbody.collapse.in {
 .input-group .form-control:first-child,
 .input-group-addon:first-child,
 .input-group-btn:first-child > .btn,
+.nav-tabs li .input-group-btn:first-child > a,
+.nav--tabs li .input-group-btn:first-child > a,
 .views-exposed-form .views-exposed-form__widget--select.input-group-btn:first-child > label,
 .input-group-btn:first-child > .btn-group > .btn,
+.nav-tabs li .input-group-btn:first-child > .btn-group > a,
+.nav--tabs li .input-group-btn:first-child > .btn-group > a,
 .views-exposed-form .input-group-btn:first-child > .views-exposed-form__widget--select.btn-group > label,
 .input-group-btn:first-child > .dropdown-toggle,
 .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+.nav-tabs li .input-group-btn:last-child > a:not(:last-child):not(.dropdown-toggle),
+.nav--tabs li .input-group-btn:last-child > a:not(:last-child):not(.dropdown-toggle),
 .views-exposed-form .views-exposed-form__widget--select.input-group-btn:last-child > label:not(:last-child):not(.dropdown-toggle),
 .input-group-btn:last-child > .btn-group:not(:last-child) > .btn,
+.nav-tabs li .input-group-btn:last-child > .btn-group:not(:last-child) > a,
+.nav--tabs li .input-group-btn:last-child > .btn-group:not(:last-child) > a,
 .views-exposed-form .input-group-btn:last-child > .views-exposed-form__widget--select.btn-group:not(:last-child) > label {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
@@ -4969,13 +5025,21 @@ tbody.collapse.in {
 .input-group .form-control:last-child,
 .input-group-addon:last-child,
 .input-group-btn:last-child > .btn,
+.nav-tabs li .input-group-btn:last-child > a,
+.nav--tabs li .input-group-btn:last-child > a,
 .views-exposed-form .views-exposed-form__widget--select.input-group-btn:last-child > label,
 .input-group-btn:last-child > .btn-group > .btn,
+.nav-tabs li .input-group-btn:last-child > .btn-group > a,
+.nav--tabs li .input-group-btn:last-child > .btn-group > a,
 .views-exposed-form .input-group-btn:last-child > .views-exposed-form__widget--select.btn-group > label,
 .input-group-btn:last-child > .dropdown-toggle,
 .input-group-btn:first-child > .btn:not(:first-child),
+.nav-tabs li .input-group-btn:first-child > a:not(:first-child),
+.nav--tabs li .input-group-btn:first-child > a:not(:first-child),
 .views-exposed-form .views-exposed-form__widget--select.input-group-btn:first-child > label:not(:first-child),
 .input-group-btn:first-child > .btn-group:not(:first-child) > .btn,
+.nav-tabs li .input-group-btn:first-child > .btn-group:not(:first-child) > a,
+.nav--tabs li .input-group-btn:first-child > .btn-group:not(:first-child) > a,
 .views-exposed-form .input-group-btn:first-child > .views-exposed-form__widget--select.btn-group:not(:first-child) > label {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
@@ -4990,20 +5054,20 @@ tbody.collapse.in {
   font-size: 0;
   white-space: nowrap;
 }
-.input-group-btn > .btn, .views-exposed-form .views-exposed-form__widget--select.input-group-btn > label {
+.input-group-btn > .btn, .nav-tabs li .input-group-btn > a, .nav--tabs li .input-group-btn > a, .views-exposed-form .views-exposed-form__widget--select.input-group-btn > label {
   position: relative;
 }
-.input-group-btn > .btn + .btn, .views-exposed-form .views-exposed-form__widget--select.input-group-btn > label + .btn, .views-exposed-form .views-exposed-form__widget--select.input-group-btn > .btn + label, .views-exposed-form .views-exposed-form__widget--select.input-group-btn > label + label {
+.input-group-btn > .btn + .btn, .nav-tabs li .input-group-btn > a + .btn, .nav--tabs li .input-group-btn > a + .btn, .views-exposed-form .views-exposed-form__widget--select.input-group-btn > label + .btn, .nav-tabs li .input-group-btn > .btn + a, .nav-tabs li .input-group-btn > a + a, .views-exposed-form .nav-tabs li .views-exposed-form__widget--select.input-group-btn > label + a, .nav-tabs li .views-exposed-form .views-exposed-form__widget--select.input-group-btn > label + a, .nav--tabs li .input-group-btn > .btn + a, .nav-tabs .nav--tabs li .input-group-btn > a + a, .nav--tabs .nav-tabs li .input-group-btn > a + a, .nav--tabs li .input-group-btn > a + a, .views-exposed-form .nav--tabs li .views-exposed-form__widget--select.input-group-btn > label + a, .nav--tabs li .views-exposed-form .views-exposed-form__widget--select.input-group-btn > label + a, .views-exposed-form .views-exposed-form__widget--select.input-group-btn > .btn + label, .nav-tabs li .views-exposed-form .views-exposed-form__widget--select.input-group-btn > a + label, .views-exposed-form .nav-tabs li .views-exposed-form__widget--select.input-group-btn > a + label, .nav--tabs li .views-exposed-form .views-exposed-form__widget--select.input-group-btn > a + label, .views-exposed-form .nav--tabs li .views-exposed-form__widget--select.input-group-btn > a + label, .views-exposed-form .views-exposed-form__widget--select.input-group-btn > label + label {
   margin-left: -1px;
 }
-.input-group-btn > .btn:hover, .views-exposed-form .views-exposed-form__widget--select.input-group-btn > label:hover, .input-group-btn > .btn:focus, .views-exposed-form .views-exposed-form__widget--select.input-group-btn > label:focus, .input-group-btn > .btn:active, .views-exposed-form .views-exposed-form__widget--select.input-group-btn > label:active {
+.input-group-btn > .btn:hover, .nav-tabs li .input-group-btn > a:hover, .nav--tabs li .input-group-btn > a:hover, .views-exposed-form .views-exposed-form__widget--select.input-group-btn > label:hover, .input-group-btn > .btn:focus, .nav-tabs li .input-group-btn > a:focus, .nav--tabs li .input-group-btn > a:focus, .views-exposed-form .views-exposed-form__widget--select.input-group-btn > label:focus, .input-group-btn > .btn:active, .nav-tabs li .input-group-btn > a:active, .nav--tabs li .input-group-btn > a:active, .views-exposed-form .views-exposed-form__widget--select.input-group-btn > label:active {
   z-index: 2;
 }
-.input-group-btn:first-child > .btn, .views-exposed-form .views-exposed-form__widget--select.input-group-btn:first-child > label,
+.input-group-btn:first-child > .btn, .nav-tabs li .input-group-btn:first-child > a, .nav--tabs li .input-group-btn:first-child > a, .views-exposed-form .views-exposed-form__widget--select.input-group-btn:first-child > label,
 .input-group-btn:first-child > .btn-group {
   margin-right: -1px;
 }
-.input-group-btn:last-child > .btn, .views-exposed-form .views-exposed-form__widget--select.input-group-btn:last-child > label,
+.input-group-btn:last-child > .btn, .nav-tabs li .input-group-btn:last-child > a, .nav--tabs li .input-group-btn:last-child > a, .views-exposed-form .views-exposed-form__widget--select.input-group-btn:last-child > label,
 .input-group-btn:last-child > .btn-group {
   margin-left: -1px;
 }
@@ -5493,11 +5557,11 @@ tbody.collapse.in {
   margin-top: 8.5px;
   margin-bottom: 8.5px;
 }
-.navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn, .views-exposed-form .views-exposed-form__widget--select.btn-group-sm > label.navbar-btn {
+.navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn, .nav-tabs li .btn-group-sm > a.navbar-btn, .nav--tabs li .btn-group-sm > a.navbar-btn, .views-exposed-form .views-exposed-form__widget--select.btn-group-sm > label.navbar-btn {
   margin-top: 11.5px;
   margin-bottom: 11.5px;
 }
-.navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn, .views-exposed-form .views-exposed-form__widget--select.btn-group-xs > label.navbar-btn {
+.navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn, .nav-tabs li .btn-group-xs > a.navbar-btn, .nav--tabs li .btn-group-xs > a.navbar-btn, .views-exposed-form .views-exposed-form__widget--select.btn-group-xs > label.navbar-btn {
   margin-top: 14px;
   margin-bottom: 14px;
 }
@@ -5864,7 +5928,7 @@ tbody.collapse.in {
 .label:empty {
   display: none;
 }
-.btn .label, .views-exposed-form .views-exposed-form__widget--select > label .label {
+.btn .label, .nav-tabs li a .label, .nav--tabs li a .label, .views-exposed-form .views-exposed-form__widget--select > label .label {
   position: relative;
   top: -1px;
 }
@@ -5934,11 +5998,11 @@ a.label:hover, a.label:focus {
 .badge:empty {
   display: none;
 }
-.btn .badge, .views-exposed-form .views-exposed-form__widget--select > label .badge {
+.btn .badge, .nav-tabs li a .badge, .nav--tabs li a .badge, .views-exposed-form .views-exposed-form__widget--select > label .badge {
   position: relative;
   top: -1px;
 }
-.btn-xs .badge, .btn-group-xs > .btn .badge, .views-exposed-form .views-exposed-form__widget--select.btn-group-xs > label .badge, .btn-group-xs > .btn .badge, .views-exposed-form .views-exposed-form__widget--select.btn-group-xs > label .badge {
+.btn-xs .badge, .btn-group-xs > .btn .badge, .nav-tabs li .btn-group-xs > a .badge, .nav--tabs li .btn-group-xs > a .badge, .views-exposed-form .views-exposed-form__widget--select.btn-group-xs > label .badge, .btn-group-xs > .btn .badge, .nav-tabs li .btn-group-xs > a .badge, .nav--tabs li .btn-group-xs > a .badge, .views-exposed-form .views-exposed-form__widget--select.btn-group-xs > label .badge {
   top: 0;
   padding: 1px 5px;
 }
@@ -7005,11 +7069,11 @@ button.close {
 .modal-footer:after {
   clear: both;
 }
-.modal-footer .btn + .btn, .modal-footer .views-exposed-form .views-exposed-form__widget--select > label + .btn, .views-exposed-form .modal-footer .views-exposed-form__widget--select > label + .btn, .modal-footer .views-exposed-form .views-exposed-form__widget--select > .btn + label, .views-exposed-form .modal-footer .views-exposed-form__widget--select > .btn + label, .modal-footer .views-exposed-form .views-exposed-form__widget--select > label + label, .views-exposed-form .modal-footer .views-exposed-form__widget--select > label + label {
+.modal-footer .btn + .btn, .modal-footer .nav-tabs li a + .btn, .nav-tabs li .modal-footer a + .btn, .modal-footer .nav--tabs li a + .btn, .nav--tabs li .modal-footer a + .btn, .modal-footer .views-exposed-form .views-exposed-form__widget--select > label + .btn, .views-exposed-form .modal-footer .views-exposed-form__widget--select > label + .btn, .modal-footer .nav-tabs li .btn + a, .nav-tabs li .modal-footer .btn + a, .modal-footer .nav-tabs li a + a, .nav-tabs li .modal-footer a + a, .modal-footer .nav--tabs .nav-tabs li a + a, .nav-tabs .modal-footer .nav--tabs li a + a, .modal-footer .views-exposed-form .nav-tabs li .views-exposed-form__widget--select > label + a, .nav-tabs li .modal-footer .views-exposed-form .views-exposed-form__widget--select > label + a, .views-exposed-form .modal-footer .nav-tabs li .views-exposed-form__widget--select > label + a, .nav-tabs li .views-exposed-form .modal-footer .views-exposed-form__widget--select > label + a, .modal-footer .nav--tabs li .btn + a, .nav--tabs li .modal-footer .btn + a, .modal-footer .nav-tabs .nav--tabs li a + a, .nav--tabs .modal-footer .nav-tabs li a + a, .nav-tabs .nav--tabs li .modal-footer a + a, .nav--tabs .nav-tabs li .modal-footer a + a, .modal-footer .nav--tabs li a + a, .nav--tabs li .modal-footer a + a, .modal-footer .views-exposed-form .nav--tabs li .views-exposed-form__widget--select > label + a, .nav--tabs li .modal-footer .views-exposed-form .views-exposed-form__widget--select > label + a, .views-exposed-form .modal-footer .nav--tabs li .views-exposed-form__widget--select > label + a, .nav--tabs li .views-exposed-form .modal-footer .views-exposed-form__widget--select > label + a, .modal-footer .views-exposed-form .views-exposed-form__widget--select > .btn + label, .views-exposed-form .modal-footer .views-exposed-form__widget--select > .btn + label, .modal-footer .nav-tabs li .views-exposed-form .views-exposed-form__widget--select > a + label, .views-exposed-form .modal-footer .nav-tabs li .views-exposed-form__widget--select > a + label, .nav-tabs li .modal-footer .views-exposed-form .views-exposed-form__widget--select > a + label, .views-exposed-form .nav-tabs li .modal-footer .views-exposed-form__widget--select > a + label, .modal-footer .nav--tabs li .views-exposed-form .views-exposed-form__widget--select > a + label, .views-exposed-form .modal-footer .nav--tabs li .views-exposed-form__widget--select > a + label, .nav--tabs li .modal-footer .views-exposed-form .views-exposed-form__widget--select > a + label, .views-exposed-form .nav--tabs li .modal-footer .views-exposed-form__widget--select > a + label, .modal-footer .views-exposed-form .views-exposed-form__widget--select > label + label, .views-exposed-form .modal-footer .views-exposed-form__widget--select > label + label {
   margin-left: 5px;
   margin-bottom: 0;
 }
-.modal-footer .btn-group .btn + .btn, .modal-footer .btn-group .views-exposed-form .views-exposed-form__widget--select > label + .btn, .views-exposed-form .modal-footer .btn-group .views-exposed-form__widget--select > label + .btn, .modal-footer .btn-group .views-exposed-form .views-exposed-form__widget--select > .btn + label, .views-exposed-form .modal-footer .btn-group .views-exposed-form__widget--select > .btn + label, .modal-footer .btn-group .views-exposed-form .views-exposed-form__widget--select > label + label, .views-exposed-form .modal-footer .btn-group .views-exposed-form__widget--select > label + label {
+.modal-footer .btn-group .btn + .btn, .modal-footer .btn-group .nav-tabs li a + .btn, .nav-tabs li .modal-footer .btn-group a + .btn, .modal-footer .btn-group .nav--tabs li a + .btn, .nav--tabs li .modal-footer .btn-group a + .btn, .modal-footer .btn-group .views-exposed-form .views-exposed-form__widget--select > label + .btn, .views-exposed-form .modal-footer .btn-group .views-exposed-form__widget--select > label + .btn, .modal-footer .btn-group .nav-tabs li .btn + a, .nav-tabs li .modal-footer .btn-group .btn + a, .modal-footer .btn-group .nav-tabs li a + a, .nav-tabs li .modal-footer .btn-group a + a, .modal-footer .btn-group .nav--tabs .nav-tabs li a + a, .nav-tabs .modal-footer .btn-group .nav--tabs li a + a, .modal-footer .btn-group .views-exposed-form .nav-tabs li .views-exposed-form__widget--select > label + a, .nav-tabs li .modal-footer .btn-group .views-exposed-form .views-exposed-form__widget--select > label + a, .views-exposed-form .modal-footer .btn-group .nav-tabs li .views-exposed-form__widget--select > label + a, .nav-tabs li .views-exposed-form .modal-footer .btn-group .views-exposed-form__widget--select > label + a, .modal-footer .btn-group .nav--tabs li .btn + a, .nav--tabs li .modal-footer .btn-group .btn + a, .modal-footer .btn-group .nav-tabs .nav--tabs li a + a, .nav--tabs .modal-footer .btn-group .nav-tabs li a + a, .nav-tabs .nav--tabs li .modal-footer .btn-group a + a, .nav--tabs .nav-tabs li .modal-footer .btn-group a + a, .modal-footer .btn-group .nav--tabs li a + a, .nav--tabs li .modal-footer .btn-group a + a, .modal-footer .btn-group .views-exposed-form .nav--tabs li .views-exposed-form__widget--select > label + a, .nav--tabs li .modal-footer .btn-group .views-exposed-form .views-exposed-form__widget--select > label + a, .views-exposed-form .modal-footer .btn-group .nav--tabs li .views-exposed-form__widget--select > label + a, .nav--tabs li .views-exposed-form .modal-footer .btn-group .views-exposed-form__widget--select > label + a, .modal-footer .btn-group .views-exposed-form .views-exposed-form__widget--select > .btn + label, .views-exposed-form .modal-footer .btn-group .views-exposed-form__widget--select > .btn + label, .modal-footer .btn-group .nav-tabs li .views-exposed-form .views-exposed-form__widget--select > a + label, .views-exposed-form .modal-footer .btn-group .nav-tabs li .views-exposed-form__widget--select > a + label, .nav-tabs li .modal-footer .btn-group .views-exposed-form .views-exposed-form__widget--select > a + label, .views-exposed-form .nav-tabs li .modal-footer .btn-group .views-exposed-form__widget--select > a + label, .modal-footer .btn-group .nav--tabs li .views-exposed-form .views-exposed-form__widget--select > a + label, .views-exposed-form .modal-footer .btn-group .nav--tabs li .views-exposed-form__widget--select > a + label, .nav--tabs li .modal-footer .btn-group .views-exposed-form .views-exposed-form__widget--select > a + label, .views-exposed-form .nav--tabs li .modal-footer .btn-group .views-exposed-form__widget--select > a + label, .modal-footer .btn-group .views-exposed-form .views-exposed-form__widget--select > label + label, .views-exposed-form .modal-footer .btn-group .views-exposed-form__widget--select > label + label {
   margin-left: -1px;
 }
 .modal-footer .btn-block + .btn-block {
@@ -7473,7 +7537,7 @@ button.close {
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
-.carousel-caption .btn, .carousel-caption .views-exposed-form .views-exposed-form__widget--select > label, .views-exposed-form .carousel-caption .views-exposed-form__widget--select > label {
+.carousel-caption .btn, .carousel-caption .nav-tabs li a, .nav-tabs li .carousel-caption a, .carousel-caption .nav--tabs li a, .nav--tabs li .carousel-caption a, .carousel-caption .views-exposed-form .views-exposed-form__widget--select > label, .views-exposed-form .carousel-caption .views-exposed-form__widget--select > label {
   text-shadow: none;
 }
 
@@ -10200,7 +10264,7 @@ body.ctools-modal-open {
   overflow: auto;
   padding-bottom: 20px;
 }
-#modalContent .panels-section-column-categories .btn, #modalContent .panels-section-column-categories .views-exposed-form .views-exposed-form__widget--select > label, .views-exposed-form #modalContent .panels-section-column-categories .views-exposed-form__widget--select > label {
+#modalContent .panels-section-column-categories .btn, #modalContent .panels-section-column-categories .nav-tabs li a, .nav-tabs li #modalContent .panels-section-column-categories a, #modalContent .panels-section-column-categories .nav--tabs li a, .nav--tabs li #modalContent .panels-section-column-categories a, #modalContent .panels-section-column-categories .views-exposed-form .views-exposed-form__widget--select > label, .views-exposed-form #modalContent .panels-section-column-categories .views-exposed-form__widget--select > label {
   border: 1px solid #999999 !important;
   line-height: inherit;
   margin: 0;
@@ -10209,7 +10273,7 @@ body.ctools-modal-open {
 #modalContent .panels-categories-box {
   border: 0;
 }
-#modalContent .panels-categories-box a.btn {
+#modalContent .panels-categories-box a.btn, #modalContent .panels-categories-box .nav-tabs li a, .nav-tabs li #modalContent .panels-categories-box a, #modalContent .panels-categories-box .nav--tabs li a, .nav--tabs li #modalContent .panels-categories-box a {
   padding: 5px 10px;
 }
 #modalContent .panels-categories-box a.active {
@@ -10217,7 +10281,7 @@ body.ctools-modal-open {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-#modalContent .panels-root-content-box a.btn {
+#modalContent .panels-root-content-box a.btn, #modalContent .panels-root-content-box .nav-tabs li a, .nav-tabs li #modalContent .panels-root-content-box a, #modalContent .panels-root-content-box .nav--tabs li a, .nav--tabs li #modalContent .panels-root-content-box a {
   padding: 5px 10px;
 }
 #modalContent .panels-categories-description {
@@ -10236,7 +10300,7 @@ body.ctools-modal-open {
 #modal-content fieldset.widget-preview .panel-heading {
   position: relative;
 }
-#modal-content fieldset.widget-preview .panel-heading .btn, #modal-content fieldset.widget-preview .panel-heading .views-exposed-form .views-exposed-form__widget--select > label, .views-exposed-form #modal-content fieldset.widget-preview .panel-heading .views-exposed-form__widget--select > label {
+#modal-content fieldset.widget-preview .panel-heading .btn, #modal-content fieldset.widget-preview .panel-heading .nav-tabs li a, .nav-tabs li #modal-content fieldset.widget-preview .panel-heading a, #modal-content fieldset.widget-preview .panel-heading .nav--tabs li a, .nav--tabs li #modal-content fieldset.widget-preview .panel-heading a, #modal-content fieldset.widget-preview .panel-heading .views-exposed-form .views-exposed-form__widget--select > label, .views-exposed-form #modal-content fieldset.widget-preview .panel-heading .views-exposed-form__widget--select > label {
   position: absolute;
   right: 10px;
   top: 5px;
@@ -10617,7 +10681,7 @@ form .container-inline-date .date-padding {
   padding: 0;
   float: none;
 }
-form .form-actions .btn, form .form-actions .views-exposed-form .views-exposed-form__widget--select > label, .views-exposed-form form .form-actions .views-exposed-form__widget--select > label {
+form .form-actions .btn, form .form-actions .nav-tabs li a, .nav-tabs li form .form-actions a, form .form-actions .nav--tabs li a, .nav--tabs li form .form-actions a, form .form-actions .views-exposed-form .views-exposed-form__widget--select > label, .views-exposed-form form .form-actions .views-exposed-form__widget--select > label {
   margin-right: 10px;
 }
 form .field-type-datetime select {
@@ -10670,7 +10734,7 @@ html.js fieldset.collapsed {
 }
 
 @media (max-width: 767px) {
-  form .btn, form .views-exposed-form .views-exposed-form__widget--select > label, .views-exposed-form form .views-exposed-form__widget--select > label {
+  form .btn, form .nav-tabs li a, .nav-tabs li form a, form .nav--tabs li a, .nav--tabs li form a, form .views-exposed-form .views-exposed-form__widget--select > label, .views-exposed-form form .views-exposed-form__widget--select > label {
     width: 100%;
     display: block;
     clear: both;
@@ -10924,6 +10988,12 @@ h4 {
   line-height: 140%;
 }
 
+h5 {
+  font-size: 12px;
+  margin: 0 0 10px;
+  line-height: 140%;
+}
+
 a:hover, a:focus {
   text-decoration: none;
 }
@@ -11026,12 +11096,67 @@ div.panels-ipe-newblock ul {
   }
 }
 
+.calendar-calendar {
+  padding: 0;
+}
+.calendar-calendar .month-view table.full tr {
+  background: none;
+}
+.calendar-calendar .month-view table.full th, .calendar-calendar .month-view table.full td {
+  border: 1px solid #796b4f;
+}
+.calendar-calendar .month-view table.full th.single-day, .calendar-calendar .month-view table.full th.date-box, .calendar-calendar .month-view table.full th.days, .calendar-calendar .month-view table.full td.single-day, .calendar-calendar .month-view table.full td.date-box, .calendar-calendar .month-view table.full td.days {
+  background: none;
+}
+.calendar-calendar .month-view table.full th.single-day.empty, .calendar-calendar .month-view table.full th.single-day.no-entry, .calendar-calendar .month-view table.full th.single-day.future.empty, .calendar-calendar .month-view table.full th.date-box.empty, .calendar-calendar .month-view table.full th.date-box.no-entry, .calendar-calendar .month-view table.full th.date-box.future.empty, .calendar-calendar .month-view table.full th.days.empty, .calendar-calendar .month-view table.full th.days.no-entry, .calendar-calendar .month-view table.full th.days.future.empty, .calendar-calendar .month-view table.full td.single-day.empty, .calendar-calendar .month-view table.full td.single-day.no-entry, .calendar-calendar .month-view table.full td.single-day.future.empty, .calendar-calendar .month-view table.full td.date-box.empty, .calendar-calendar .month-view table.full td.date-box.no-entry, .calendar-calendar .month-view table.full td.date-box.future.empty, .calendar-calendar .month-view table.full td.days.empty, .calendar-calendar .month-view table.full td.days.no-entry, .calendar-calendar .month-view table.full td.days.future.empty {
+  background: none;
+}
+.calendar-calendar .month-view table.full th.single-day.today, .calendar-calendar .month-view table.full th.date-box.today, .calendar-calendar .month-view table.full th.days.today, .calendar-calendar .month-view table.full td.single-day.today, .calendar-calendar .month-view table.full td.date-box.today, .calendar-calendar .month-view table.full td.days.today {
+  border-color: #f26838;
+}
+.calendar-calendar .month-view table.full th.single-day div.monthview, .calendar-calendar .month-view table.full td.single-day div.monthview {
+  background: #f58c68;
+  padding: 5px;
+  color: white;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+.calendar-calendar .month-view table.full th.single-day div.monthview a, .calendar-calendar .month-view table.full td.single-day div.monthview a {
+  color: white;
+  font-size: 1.2em;
+}
+.calendar-calendar .month-view table.full th.single-day div.monthview a .date-display-range, .calendar-calendar .month-view table.full td.single-day div.monthview a .date-display-range {
+  font-size: 0.85em;
+}
+.calendar-calendar .month-view table.full th.multi-day td, .calendar-calendar .month-view table.full td.multi-day td {
+  height: 30px;
+}
+.calendar-calendar .month-view table.full th.multi-day div.monthview, .calendar-calendar .month-view table.full th.multi-day div.weekview, .calendar-calendar .month-view table.full th.multi-day div.dayview, .calendar-calendar .month-view table.full td.multi-day div.monthview, .calendar-calendar .month-view table.full td.multi-day div.weekview, .calendar-calendar .month-view table.full td.multi-day div.dayview {
+  background: #f58c68;
+  height: 40px;
+  padding: 5px;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+.calendar-calendar .month-view table.full th.multi-day div.monthview a, .calendar-calendar .month-view table.full th.multi-day div.weekview a, .calendar-calendar .month-view table.full th.multi-day div.dayview a, .calendar-calendar .month-view table.full td.multi-day div.monthview a, .calendar-calendar .month-view table.full td.multi-day div.weekview a, .calendar-calendar .month-view table.full td.multi-day div.dayview a {
+  color: white;
+  font-size: 1.2em;
+}
+.calendar-calendar .month-view table.full th.multi-day div.monthview a .date-display-range, .calendar-calendar .month-view table.full th.multi-day div.weekview a .date-display-range, .calendar-calendar .month-view table.full th.multi-day div.dayview a .date-display-range, .calendar-calendar .month-view table.full td.multi-day div.monthview a .date-display-range, .calendar-calendar .month-view table.full td.multi-day div.weekview a .date-display-range, .calendar-calendar .month-view table.full td.multi-day div.dayview a .date-display-range {
+  font-size: 0.85em;
+}
+.calendar-calendar .month-view table.full th.multi-day div.monthview .continuation, .calendar-calendar .month-view table.full th.multi-day div.monthview .continues, .calendar-calendar .month-view table.full th.multi-day div.monthview .cutoff, .calendar-calendar .month-view table.full th.multi-day div.weekview .continuation, .calendar-calendar .month-view table.full th.multi-day div.weekview .continues, .calendar-calendar .month-view table.full th.multi-day div.weekview .cutoff, .calendar-calendar .month-view table.full th.multi-day div.dayview .continuation, .calendar-calendar .month-view table.full th.multi-day div.dayview .continues, .calendar-calendar .month-view table.full th.multi-day div.dayview .cutoff, .calendar-calendar .month-view table.full td.multi-day div.monthview .continuation, .calendar-calendar .month-view table.full td.multi-day div.monthview .continues, .calendar-calendar .month-view table.full td.multi-day div.monthview .cutoff, .calendar-calendar .month-view table.full td.multi-day div.weekview .continuation, .calendar-calendar .month-view table.full td.multi-day div.weekview .continues, .calendar-calendar .month-view table.full td.multi-day div.weekview .cutoff, .calendar-calendar .month-view table.full td.multi-day div.dayview .continuation, .calendar-calendar .month-view table.full td.multi-day div.dayview .continues, .calendar-calendar .month-view table.full td.multi-day div.dayview .cutoff {
+  display: none;
+}
+
 .node-event img {
   width: 100%;
   height: auto;
 }
 
-.btn, .views-exposed-form .views-exposed-form__widget--select > label {
+.btn, .nav-tabs li a, .nav--tabs li a, .views-exposed-form .views-exposed-form__widget--select > label {
   color: #796b4f;
   font-size: 13px;
   font-family: "Raleway", sans-serif;
@@ -11043,35 +11168,35 @@ div.panels-ipe-newblock ul {
   -webkit-border-radius: 2px;
   border-radius: 2px;
 }
-.btn:hover, .views-exposed-form .views-exposed-form__widget--select > label:hover, .btn:focus, .views-exposed-form .views-exposed-form__widget--select > label:focus {
+.btn:hover, .nav-tabs li a:hover, .nav--tabs li a:hover, .views-exposed-form .views-exposed-form__widget--select > label:hover, .btn:focus, .nav-tabs li a:focus, .nav--tabs li a:focus, .views-exposed-form .views-exposed-form__widget--select > label:focus {
   color: #ffffff;
   background: #796b4f;
   border-color: #796b4f;
 }
-.btn.btn--hover, .views-exposed-form .views-exposed-form__widget--select > label.btn--hover, .views-exposed-form .views-exposed-form__widget--select.open > label {
+.btn.btn--hover, .nav-tabs li a.btn--hover, .nav--tabs li a.btn--hover, .views-exposed-form .views-exposed-form__widget--select > label.btn--hover, .views-exposed-form .views-exposed-form__widget--select.open > label {
   color: #ffffff;
   background: #796b4f;
   border-color: #796b4f;
 }
-.btn.btn--secondary, .views-exposed-form .views-exposed-form__widget--select > label.btn--secondary {
+.btn.btn--secondary, .nav-tabs li a.btn--secondary, .nav--tabs li a.btn--secondary, .views-exposed-form .views-exposed-form__widget--select > label.btn--secondary {
   color: #ffffff;
   background: #f26838;
   border-color: #f26838;
 }
-.btn.btn--secondary:hover, .views-exposed-form .views-exposed-form__widget--select > label.btn--secondary:hover, .btn.btn--secondary:focus, .views-exposed-form .views-exposed-form__widget--select > label.btn--secondary:focus {
+.btn.btn--secondary:hover, .nav-tabs li a.btn--secondary:hover, .nav--tabs li a.btn--secondary:hover, .views-exposed-form .views-exposed-form__widget--select > label.btn--secondary:hover, .btn.btn--secondary:focus, .nav-tabs li a.btn--secondary:focus, .nav--tabs li a.btn--secondary:focus, .views-exposed-form .views-exposed-form__widget--select > label.btn--secondary:focus {
   background: #796b4f;
   border-color: #796b4f;
 }
-.btn.btn--xs, .panels-add-content-modal .widget-preview .btn.panels-modal-add-config, .panels-add-content-modal .widget-preview .views-exposed-form .views-exposed-form__widget--select > label.panels-modal-add-config, .views-exposed-form .panels-add-content-modal .widget-preview .views-exposed-form__widget--select > label.panels-modal-add-config, .views-exposed-form .views-exposed-form__widget--select > label.btn--xs {
+.btn.btn--xs, .nav-tabs li a.btn--xs, .nav--tabs li a.btn--xs, .panels-add-content-modal .widget-preview .btn.panels-modal-add-config, .panels-add-content-modal .widget-preview .nav-tabs li a.panels-modal-add-config, .nav-tabs li .panels-add-content-modal .widget-preview a.panels-modal-add-config, .panels-add-content-modal .widget-preview .nav--tabs li a.panels-modal-add-config, .nav--tabs li .panels-add-content-modal .widget-preview a.panels-modal-add-config, .panels-add-content-modal .widget-preview .views-exposed-form .views-exposed-form__widget--select > label.panels-modal-add-config, .views-exposed-form .panels-add-content-modal .widget-preview .views-exposed-form__widget--select > label.panels-modal-add-config, .views-exposed-form .views-exposed-form__widget--select > label.btn--xs {
   padding: 5px 10px 4px;
   font-size: 12px;
 }
-.btn.btn--lg, .views-exposed-form .views-exposed-form__widget--select > label.btn--lg {
+.btn.btn--lg, .nav-tabs li a.btn--lg, .nav--tabs li a.btn--lg, .views-exposed-form .views-exposed-form__widget--select > label.btn--lg {
   padding: 7px 60px 5px;
   font-size: 16px;
 }
 
-.btn + .btn, .views-exposed-form .views-exposed-form__widget--select > label + .btn, .views-exposed-form .views-exposed-form__widget--select > .btn + label, .views-exposed-form .views-exposed-form__widget--select > label + label {
+.btn + .btn, .nav-tabs li a + .btn, .nav--tabs li a + .btn, .views-exposed-form .views-exposed-form__widget--select > label + .btn, .nav-tabs li .btn + a, .nav-tabs li a + a, .views-exposed-form .nav-tabs li .views-exposed-form__widget--select > label + a, .nav-tabs li .views-exposed-form .views-exposed-form__widget--select > label + a, .nav--tabs li .btn + a, .nav--tabs li a + a, .views-exposed-form .nav--tabs li .views-exposed-form__widget--select > label + a, .nav--tabs li .views-exposed-form .views-exposed-form__widget--select > label + a, .views-exposed-form .views-exposed-form__widget--select > .btn + label, .nav-tabs li .views-exposed-form .views-exposed-form__widget--select > a + label, .views-exposed-form .nav-tabs li .views-exposed-form__widget--select > a + label, .nav--tabs li .views-exposed-form .views-exposed-form__widget--select > a + label, .views-exposed-form .nav--tabs li .views-exposed-form__widget--select > a + label, .views-exposed-form .views-exposed-form__widget--select > label + label {
   margin-right: 10px;
 }
 
@@ -11368,11 +11493,11 @@ body.maintenance-page .form-actions {
   margin: 0;
 }
 
-.navbar-header .btn, .navbar-header .views-exposed-form .views-exposed-form__widget--select > label, .views-exposed-form .navbar-header .views-exposed-form__widget--select > label {
+.navbar-header .btn, .navbar-header .nav-tabs li a, .nav-tabs li .navbar-header a, .navbar-header .nav--tabs li a, .nav--tabs li .navbar-header a, .navbar-header .views-exposed-form .views-exposed-form__widget--select > label, .views-exposed-form .navbar-header .views-exposed-form__widget--select > label {
   margin: 8px 0 8px 15px;
   padding: 6px 10px;
 }
-.navbar-header .btn + .btn, .navbar-header .views-exposed-form .views-exposed-form__widget--select > label + .btn, .views-exposed-form .navbar-header .views-exposed-form__widget--select > label + .btn, .navbar-header .views-exposed-form .views-exposed-form__widget--select > .btn + label, .views-exposed-form .navbar-header .views-exposed-form__widget--select > .btn + label, .navbar-header .views-exposed-form .views-exposed-form__widget--select > label + label, .views-exposed-form .navbar-header .views-exposed-form__widget--select > label + label {
+.navbar-header .btn + .btn, .navbar-header .nav-tabs li a + .btn, .nav-tabs li .navbar-header a + .btn, .navbar-header .nav--tabs li a + .btn, .nav--tabs li .navbar-header a + .btn, .navbar-header .views-exposed-form .views-exposed-form__widget--select > label + .btn, .views-exposed-form .navbar-header .views-exposed-form__widget--select > label + .btn, .navbar-header .nav-tabs li .btn + a, .nav-tabs li .navbar-header .btn + a, .navbar-header .nav-tabs li a + a, .nav-tabs li .navbar-header a + a, .navbar-header .nav--tabs .nav-tabs li a + a, .nav-tabs .navbar-header .nav--tabs li a + a, .navbar-header .views-exposed-form .nav-tabs li .views-exposed-form__widget--select > label + a, .nav-tabs li .navbar-header .views-exposed-form .views-exposed-form__widget--select > label + a, .views-exposed-form .navbar-header .nav-tabs li .views-exposed-form__widget--select > label + a, .nav-tabs li .views-exposed-form .navbar-header .views-exposed-form__widget--select > label + a, .navbar-header .nav--tabs li .btn + a, .nav--tabs li .navbar-header .btn + a, .navbar-header .nav-tabs .nav--tabs li a + a, .nav--tabs .navbar-header .nav-tabs li a + a, .nav-tabs .nav--tabs li .navbar-header a + a, .nav--tabs .nav-tabs li .navbar-header a + a, .navbar-header .nav--tabs li a + a, .nav--tabs li .navbar-header a + a, .navbar-header .views-exposed-form .nav--tabs li .views-exposed-form__widget--select > label + a, .nav--tabs li .navbar-header .views-exposed-form .views-exposed-form__widget--select > label + a, .views-exposed-form .navbar-header .nav--tabs li .views-exposed-form__widget--select > label + a, .nav--tabs li .views-exposed-form .navbar-header .views-exposed-form__widget--select > label + a, .navbar-header .views-exposed-form .views-exposed-form__widget--select > .btn + label, .views-exposed-form .navbar-header .views-exposed-form__widget--select > .btn + label, .navbar-header .nav-tabs li .views-exposed-form .views-exposed-form__widget--select > a + label, .views-exposed-form .navbar-header .nav-tabs li .views-exposed-form__widget--select > a + label, .nav-tabs li .navbar-header .views-exposed-form .views-exposed-form__widget--select > a + label, .views-exposed-form .nav-tabs li .navbar-header .views-exposed-form__widget--select > a + label, .navbar-header .nav--tabs li .views-exposed-form .views-exposed-form__widget--select > a + label, .views-exposed-form .navbar-header .nav--tabs li .views-exposed-form__widget--select > a + label, .nav--tabs li .navbar-header .views-exposed-form .views-exposed-form__widget--select > a + label, .views-exposed-form .nav--tabs li .navbar-header .views-exposed-form__widget--select > a + label, .navbar-header .views-exposed-form .views-exposed-form__widget--select > label + label, .views-exposed-form .navbar-header .views-exposed-form__widget--select > label + label {
   margin-left: 8px;
 }
 
@@ -11438,12 +11563,12 @@ ul.navbar-nav li a {
     padding-left: 25px;
   }
 }
-ul.navbar-nav > li.has-btn a.btn {
+ul.navbar-nav > li.has-btn a.btn, .nav-tabs ul.navbar-nav > li.has-btn a, .nav--tabs ul.navbar-nav > li.has-btn a {
   padding: 4px 15px 2px;
   display: table;
   margin: 0 auto;
 }
-ul.navbar-nav > li.has-btn a.btn:hover, ul.navbar-nav > li.has-btn a.btn:focus {
+ul.navbar-nav > li.has-btn a.btn:hover, .nav-tabs ul.navbar-nav > li.has-btn a:hover, .nav--tabs ul.navbar-nav > li.has-btn a:hover, ul.navbar-nav > li.has-btn a.btn:focus, .nav-tabs ul.navbar-nav > li.has-btn a:focus, .nav--tabs ul.navbar-nav > li.has-btn a:focus {
   background-color: #f26838;
   color: white;
 }
@@ -11503,11 +11628,53 @@ ul.footer-nav > li ul.dropdown-menu {
 }
 ul.footer-nav > li ul.dropdown-menu li a {
   font-size: 13px;
+  line-height: 160%;
   padding: 0;
   display: inline;
 }
 ul.footer-nav > li ul.dropdown-menu li a:hover, ul.footer-nav > li ul.dropdown-menu li a:focus, ul.footer-nav > li ul.dropdown-menu li a.active, ul.footer-nav > li ul.dropdown-menu li a.active-trail {
   background: none;
+}
+
+.nav-tabs, .nav--tabs {
+  margin: 0 auto 25px;
+  text-align: center;
+  border: 1px solid #796b4f;
+  display: table;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+.nav-tabs li, .nav--tabs li {
+  margin: 0;
+  border-right: 1px solid #796b4f;
+}
+.nav-tabs li:last-child, .nav--tabs li:last-child {
+  border-right: 0;
+}
+.nav-tabs li a, .nav--tabs li a {
+  border: 0;
+  margin: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+@media (min-width: 992px) {
+  .nav-tabs li a, .nav--tabs li a {
+    min-width: 200px;
+  }
+}
+.nav-tabs li a:hover, .nav-tabs li a:focus, .nav--tabs li a:hover, .nav--tabs li a:focus {
+  border: 0;
+  background-color: #f26838;
+  color: white;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.nav-tabs li.active-trail a, .nav-tabs li.active-trail a:hover, .nav-tabs li.active-trail a:focus, .nav--tabs li.active-trail a, .nav--tabs li.active-trail a:hover, .nav--tabs li.active-trail a:focus {
+  border: 0;
+  background-color: #f26838;
+  color: white;
 }
 
 body {
@@ -11588,12 +11755,12 @@ body {
   padding-top: 100px;
 }
 
-.panels-add-content-modal .widget-preview .btn.panels-modal-add-config, .panels-add-content-modal .widget-preview .views-exposed-form .views-exposed-form__widget--select > label.panels-modal-add-config, .views-exposed-form .panels-add-content-modal .widget-preview .views-exposed-form__widget--select > label.panels-modal-add-config {
+.panels-add-content-modal .widget-preview .btn.panels-modal-add-config, .panels-add-content-modal .widget-preview .nav-tabs li a.panels-modal-add-config, .nav-tabs li .panels-add-content-modal .widget-preview a.panels-modal-add-config, .panels-add-content-modal .widget-preview .nav--tabs li a.panels-modal-add-config, .nav--tabs li .panels-add-content-modal .widget-preview a.panels-modal-add-config, .panels-add-content-modal .widget-preview .views-exposed-form .views-exposed-form__widget--select > label.panels-modal-add-config, .views-exposed-form .panels-add-content-modal .widget-preview .views-exposed-form__widget--select > label.panels-modal-add-config {
   background: rgba(242, 104, 56, 0.8);
   color: white;
   border-color: rgba(242, 104, 56, 0.8);
 }
-.panels-add-content-modal .widget-preview .btn.panels-modal-add-config:hover, .panels-add-content-modal .widget-preview .views-exposed-form .views-exposed-form__widget--select > label.panels-modal-add-config:hover, .views-exposed-form .panels-add-content-modal .widget-preview .views-exposed-form__widget--select > label.panels-modal-add-config:hover, .panels-add-content-modal .widget-preview .btn.panels-modal-add-config:focus, .panels-add-content-modal .widget-preview .views-exposed-form .views-exposed-form__widget--select > label.panels-modal-add-config:focus, .views-exposed-form .panels-add-content-modal .widget-preview .views-exposed-form__widget--select > label.panels-modal-add-config:focus {
+.panels-add-content-modal .widget-preview .btn.panels-modal-add-config:hover, .panels-add-content-modal .widget-preview .nav-tabs li a.panels-modal-add-config:hover, .nav-tabs li .panels-add-content-modal .widget-preview a.panels-modal-add-config:hover, .panels-add-content-modal .widget-preview .nav--tabs li a.panels-modal-add-config:hover, .nav--tabs li .panels-add-content-modal .widget-preview a.panels-modal-add-config:hover, .panels-add-content-modal .widget-preview .views-exposed-form .views-exposed-form__widget--select > label.panels-modal-add-config:hover, .views-exposed-form .panels-add-content-modal .widget-preview .views-exposed-form__widget--select > label.panels-modal-add-config:hover, .panels-add-content-modal .widget-preview .btn.panels-modal-add-config:focus, .panels-add-content-modal .widget-preview .nav-tabs li a.panels-modal-add-config:focus, .nav-tabs li .panels-add-content-modal .widget-preview a.panels-modal-add-config:focus, .panels-add-content-modal .widget-preview .nav--tabs li a.panels-modal-add-config:focus, .nav--tabs li .panels-add-content-modal .widget-preview a.panels-modal-add-config:focus, .panels-add-content-modal .widget-preview .views-exposed-form .views-exposed-form__widget--select > label.panels-modal-add-config:focus, .views-exposed-form .panels-add-content-modal .widget-preview .views-exposed-form__widget--select > label.panels-modal-add-config:focus {
   background: #f26838;
   border-color: #f26838;
 }

@@ -3,7 +3,7 @@
 $plugin = array(
   'title' => t('Blog post node'),
   'icon' => 'layout_menu_node.png',
-  'category' => t('Restaurant Radix'),
+  'category' => t('Sizzle'),
   'theme' => 'layout__menu__node',
   'regions' => array(
     'slideshow' => t('Slideshow'),

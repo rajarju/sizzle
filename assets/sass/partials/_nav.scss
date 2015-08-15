@@ -119,8 +119,6 @@ ul.dropdown-menu {
 
 // Footer nav
 // -----------------------------------------------------------------------------
-// Footer Nav
-// --------------------------------------------------
 ul.footer-nav {
   @extend .row;
   margin: 30px auto;
@@ -164,11 +162,54 @@ ul.footer-nav {
       li {
         a {
           font-size: 13px;
+          line-height: 160%;
           padding: 0;
           display: inline;
           &:hover, &:focus, &.active, &.active-trail {
             background: none;
           }
+        }
+      }
+    }
+  }
+}
+
+// Nav: Tabs
+// -----------------------------------------------------------------------------
+.nav {
+  &-tabs, &--tabs {
+    margin: 0 auto 25px;
+    text-align: center;
+    border: 1px solid $brand-primary;
+    display: table;
+    @include border-radius(2px);
+    li {
+      margin: 0;
+      border-right: 1px solid $brand-primary;
+      &:last-child {
+        border-right: 0;
+      }
+      a {
+        @extend .btn;
+        border: 0;
+        margin: 0;
+        @include border-radius(0);
+        @include bp(md) {
+          min-width: 200px;
+        }
+        &:hover, &:focus {
+          border: 0;
+          background-color: $brand-secondary;
+          color: white;
+          @include box-shadow(none);
+        }
+      }
+
+      &.active-trail {
+        a, a:hover, a:focus {
+          border: 0;
+          background-color: $brand-secondary;
+          color: white;
         }
       }
     }
