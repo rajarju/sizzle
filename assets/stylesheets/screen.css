@@ -11098,6 +11098,7 @@ div.panels-ipe-newblock ul {
 
 .calendar-calendar {
   padding: 0;
+  margin-bottom: 40px;
 }
 .calendar-calendar .month-view table.full tr {
   background: none;
@@ -11149,6 +11150,13 @@ div.panels-ipe-newblock ul {
 }
 .calendar-calendar .month-view table.full th.multi-day div.monthview .continuation, .calendar-calendar .month-view table.full th.multi-day div.monthview .continues, .calendar-calendar .month-view table.full th.multi-day div.monthview .cutoff, .calendar-calendar .month-view table.full th.multi-day div.weekview .continuation, .calendar-calendar .month-view table.full th.multi-day div.weekview .continues, .calendar-calendar .month-view table.full th.multi-day div.weekview .cutoff, .calendar-calendar .month-view table.full th.multi-day div.dayview .continuation, .calendar-calendar .month-view table.full th.multi-day div.dayview .continues, .calendar-calendar .month-view table.full th.multi-day div.dayview .cutoff, .calendar-calendar .month-view table.full td.multi-day div.monthview .continuation, .calendar-calendar .month-view table.full td.multi-day div.monthview .continues, .calendar-calendar .month-view table.full td.multi-day div.monthview .cutoff, .calendar-calendar .month-view table.full td.multi-day div.weekview .continuation, .calendar-calendar .month-view table.full td.multi-day div.weekview .continues, .calendar-calendar .month-view table.full td.multi-day div.weekview .cutoff, .calendar-calendar .month-view table.full td.multi-day div.dayview .continuation, .calendar-calendar .month-view table.full td.multi-day div.dayview .continues, .calendar-calendar .month-view table.full td.multi-day div.dayview .cutoff {
   display: none;
+}
+
+.date-nav-wrapper h3 {
+  font-size: 24px;
+  line-height: 140%;
+  padding-top: 10px;
+  margin: 0;
 }
 
 .node-event img {
