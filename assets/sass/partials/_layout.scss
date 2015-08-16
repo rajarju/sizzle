@@ -3,7 +3,8 @@
 
 // Top
 // -----------------------------------------------------------------------------
-.layout__region--top {
+.layout__region--top,
+.layout__region--region-b {
   @include box-shadow(0 5px 5px rgba($brand-primary, 0.2));
   .panel-pane {
     float: right;

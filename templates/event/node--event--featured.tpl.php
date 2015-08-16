@@ -7,7 +7,7 @@
 <article class="<?php print $classes; ?>">
   <?php if (!empty($content['field_event_images'])): ?>
     <div class="event__images">
-      <?php print render($content['field_event_images']); ?>
+      <?php print render($content['field_event_images'][0]); ?>
     </div>
   <?php endif; ?>
 

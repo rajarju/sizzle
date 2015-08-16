@@ -12,7 +12,7 @@
   <?php endif; ?>
 
   <?php if ($content['top']): ?>
-    <div class="layout__region layout__region--top padding--xs--top padding--xs--bottom">
+    <div class="layout__region layout__region--top padding--xs--top border--sm--bottom padding--xs--bottom">
       <div class="container">
         <?php print $content['top']; ?>
       </div>

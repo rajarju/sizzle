@@ -11265,19 +11265,23 @@ form .form-checkboxes .radio label, form .form-checkboxes .checkbox label {
   height: 30px;
 }
 
-.layout__region--top {
+.layout__region--top,
+.layout__region--region-b {
   -webkit-box-shadow: 0 5px 5px rgba(121, 107, 79, 0.2);
   box-shadow: 0 5px 5px rgba(121, 107, 79, 0.2);
 }
-.layout__region--top .panel-pane {
+.layout__region--top .panel-pane,
+.layout__region--region-b .panel-pane {
   float: right;
   margin: 0 0 0 10px;
 }
-.layout__region--top .pane-fieldable-panels-pane {
+.layout__region--top .pane-fieldable-panels-pane,
+.layout__region--region-b .pane-fieldable-panels-pane {
   float: left;
   margin: 0 10px 0 0;
 }
-.layout__region--top .pane-fieldable-panels-pane.pane-bundle-text {
+.layout__region--top .pane-fieldable-panels-pane.pane-bundle-text,
+.layout__region--region-b .pane-fieldable-panels-pane.pane-bundle-text {
   padding: 5px 0;
   font-weight: 300;
 }
@@ -11340,6 +11344,9 @@ body.maintenance-page .form-actions {
 .node--menu .menu__one-liner {
   display: block;
 }
+.node--menu .menu__title {
+  font-size: 1.2em;
+}
 .node--menu .menu__types {
   border-color: rgba(121, 107, 79, 0.5);
 }
@@ -11371,7 +11378,7 @@ body.maintenance-page .form-actions {
 }
 .node--menu .menu__nutrition-types > div {
   display: inline-block;
-  margin: 0 8px 5px 0;
+  margin: 0 5px 5px 0;
 }
 .node--menu--featured .menu__wrapper {
   border: 1px solid #796b4f;

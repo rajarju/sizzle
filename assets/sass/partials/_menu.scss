@@ -26,6 +26,9 @@
   .menu__one-liner {
     display: block;
   }
+  .menu__title {
+    font-size: 1.2em;
+  }
   .menu__types {
     border-color: rgba($brand-primary, 0.5);
   }
@@ -50,7 +53,7 @@
     @include clearfix();
     > div {
       display: inline-block;
-      margin: 0 8px 5px 0;
+      margin: 0 5px 5px 0;
     }
   }
 
