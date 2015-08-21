@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @file
  * Template for the main page.
@@ -52,14 +51,19 @@
         <?php print $messages; ?>
       </div>
     <?php endif; ?>
-    <?php if ($title && !$is_panel): ?>
-      <div class="padding--sm--bottom border--sm--bottom">
-        <div class="container">
-          <h1 class="title clear-margin--top"><?php print $title; ?></h1>
-        </div>
+    <?php if ($tabs): ?>
+      <div class="page-tabs">
+        <?php print render($tabs); ?>
       </div>
     <?php endif; ?>
-    <?php print render($page['content']); ?>
+    <?php if (!$is_panel): ?>
+      <div class="container padding--lg--bottom padding--lg--top">
+        <h1 class="title clear-margin--top margin--md--bottom"><?php print $title; ?></h1>
+        <?php print render($page['content']); ?>
+      </div>
+    <?php else: ?>
+      <?php print render($page['content']); ?>
+    <?php endif; ?>
   </main>
 
   <footer class="footer" role="footer">

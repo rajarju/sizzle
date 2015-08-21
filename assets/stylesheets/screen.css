@@ -11773,6 +11773,10 @@ body {
   padding-top: 100px;
 }
 
+.panel-display {
+  padding: 40px 0;
+}
+
 .panels-add-content-modal .widget-preview .btn.panels-modal-add-config, .panels-add-content-modal .widget-preview .nav-tabs li a.panels-modal-add-config, .nav-tabs li .panels-add-content-modal .widget-preview a.panels-modal-add-config, .panels-add-content-modal .widget-preview .nav--tabs li a.panels-modal-add-config, .nav--tabs li .panels-add-content-modal .widget-preview a.panels-modal-add-config, .panels-add-content-modal .widget-preview .views-exposed-form .views-exposed-form__widget--select > label.panels-modal-add-config, .views-exposed-form .panels-add-content-modal .widget-preview .views-exposed-form__widget--select > label.panels-modal-add-config {
   background: rgba(242, 104, 56, 0.8);
   color: white;
@@ -11913,6 +11917,39 @@ body {
 
 .node {
   position: relative;
+}
+
+.page-tabs ul.nav-tabs {
+  margin: 0 auto;
+  padding: 10px 0;
+  border: 0;
+}
+.page-tabs ul.nav-tabs li {
+  border: 0;
+}
+.page-tabs ul.nav-tabs li + li {
+  margin-left: 10px;
+}
+.page-tabs ul.nav-tabs li a {
+  color: #796b4f;
+  border: 1px solid #796b4f;
+  width: auto;
+  min-width: 0;
+  padding: 5px 8px;
+  font-size: 0.85em;
+  line-height: 100%;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+.page-tabs ul.nav-tabs li.active a {
+  border: 0;
+  background: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.page-tabs ul.nav-tabs li.active a:hover {
+  background: none;
 }
 
 .view .view__header {

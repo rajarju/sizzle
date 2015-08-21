@@ -47,3 +47,40 @@
 .node {
   position: relative;
 }
+
+// Page tabs.
+// -----------------------------------------------------------------------------
+.page-tabs {
+  ul.nav-tabs {
+    margin: 0 auto;
+    padding: 10px 0;
+    border: 0;
+    li {
+      border: 0;
+      + li {
+        margin-left: 10px;
+      }
+      a {
+        color: $brand-primary;
+        border: 1px solid $brand-primary;
+        width: auto;
+        min-width: 0;
+        padding: 5px 8px;
+        font-size: 0.85em;
+        line-height: 100%;
+        @include border-radius(2px);
+      }
+
+      &.active {
+        a {
+          border: 0;
+          background: none;
+          @include box-shadow(none);
+          &:hover {
+            background: none;
+          }
+        }
+      }
+    }
+  }
+}
