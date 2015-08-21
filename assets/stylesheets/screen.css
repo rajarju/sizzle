@@ -555,7 +555,7 @@
   left: 0;
   color: white;
   padding: 5px 8px;
-  z-index: 100;
+  z-index: 200;
 }
 .ribbon:before {
   content: "";
@@ -11402,6 +11402,9 @@ body.maintenance-page .form-actions {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
+}
+.node--menu--view-mode--full .menu__title {
+  font-size: 30px;
 }
 
 .term--menu-categories--view-mode--navigation {

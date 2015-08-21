@@ -93,6 +93,12 @@
       }
     }
   }
+
+  &--view-mode--full {
+    .menu__title {
+      font-size: 30px;
+    }
+  }
 }
 
 // Menu Categories

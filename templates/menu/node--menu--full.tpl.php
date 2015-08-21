@@ -14,7 +14,7 @@
   <div class="row">
     <div class="col-md-5">
       <?php if (!empty($content['field_menu_images'])): ?>
-        <div class="menu__image">
+        <div class="menu__image margin--sm--bottom">
           <?php if (!empty($content['featured'])): ?>
             <?php print render($content['featured']); ?>
           <?php endif; ?>
@@ -24,17 +24,13 @@
     </div>
     <div class="col-md-7">
       <?php if (!empty($title)): ?>
-        <h2 class="menu__title clear-margin visible-md visible-lg">
+        <h1 class="menu__title clear-margin--top visible-md visible-lg">
           <a href="<?php print $node_url; ?>"><?php print $title; ?></a>
-        </h2>
+        </h1>
       <?php endif; ?>
 
       <?php if (!empty($content['field_menu_one_liner'])): ?>
         <small class="menu__one-liner border--xs--bottom margin--sm--bottom padding--xs--bottom"><?php print render($content['field_menu_one_liner']); ?></small>
-      <?php endif; ?>
-
-      <?php if (!empty($content['body'])): ?>
-        <div class="menu__text"><?php print render($content['body']); ?></div>
       <?php endif; ?>
 
       <?php if (!empty($content['field_menu_nutrition_types'])): ?>
@@ -43,6 +39,10 @@
 
       <?php if (!empty($content['field_menu_types'])): ?>
         <div class="menu__types border--xs--top"><?php print render($content['field_menu_types']); ?></div>
+      <?php endif; ?>
+
+      <?php if (!empty($content['body'])): ?>
+        <div class="menu__text margin--md--top"><?php print render($content['body']); ?></div>
       <?php endif; ?>
     </div>
   </div>
