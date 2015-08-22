@@ -14,6 +14,93 @@ foreach (glob($includes_path) as $filename) {
 }
 
 /**
+ * Implements hook_admin_links_info_alter().
+ */
+function sizzle_admin_links_info_alter(&$info) {
+  // Add contextual links to header.
+  $info['header'] = restaurant_admin_links_build_links(array(
+    'edit_logo' => array(
+      'title' => t('Edit logo'),
+      'href' => 'admin/appearance/settings',
+    ),
+    'edit_site_name' => array(
+      'title' => t('Edit site information'),
+      'href' => 'admin/config/restaurant/general',
+    ),
+  ), '.header');
+
+  // Add contextual links to address.
+  $info['address'] = restaurant_admin_links_build_links(array(
+    'edit' => array(
+      'title' => t('Edit contact information'),
+      'href' => 'admin/config/restaurant/contact',
+    ),
+  ), '.header .address');
+
+  // Add contextual links to footer.
+  $info['footer'] = restaurant_admin_links_build_links(array(
+    'edit_logo' => array(
+      'title' => t('Edit footer'),
+      'href' => 'admin/appearance/settings',
+    ),
+  ), '.footer');
+
+  // Add contextual links to main menu.
+  $info['navbar'] = restaurant_admin_links_build_links(array(
+    'add' => array(
+      'title' => t('Add Link'),
+      'href' => 'admin/structure/menu/manage/main-menu/add',
+    ),
+    'edit' => array(
+      'title' => t('Edit Menu'),
+      'href' => 'admin/structure/menu/manage/main-menu',
+    ),
+  ), '.navbar > .container');
+
+  // Add contextual links to footer menu.
+  $info['footer_nav'] = restaurant_admin_links_build_links(array(
+    'add' => array(
+      'title' => t('Add Link'),
+      'href' => 'admin/structure/menu/manage/menu-footer-menu/add',
+    ),
+    'edit' => array(
+      'title' => t('Edit Menu'),
+      'href' => 'admin/structure/menu/manage/menu-footer-menu',
+    ),
+  ), '.footer-nav');
+
+  // Add contextual links to copyright.
+  $info['copyright'] = restaurant_admin_links_build_links(array(
+    'edit' => array(
+      'title' => t('Edit copyright'),
+      'href' => 'admin/appearance/settings',
+      'options' => array(
+        'fragment' => 'footer'
+      ),
+    ),
+  ), '.footer .copyright');
+
+  // Add contextual links to copyright.
+  $info['footer_text'] = restaurant_admin_links_build_links(array(
+    'edit' => array(
+      'title' => t('Edit footer text'),
+      'href' => 'admin/appearance/settings',
+      'options' => array(
+        'fragment' => 'footer'
+      ),
+    ),
+  ), '.footer .footer-text');
+
+  // Add contextual links to copyright.
+  $info['menu_categories'] = restaurant_admin_links_build_links(array(
+    'edit' => array(
+      'title' => t('Edit categories'),
+      'href' => 'admin/structure/taxonomy/menu_categories',
+    ),
+  ), '.pane-menu-categories-menu-categories');
+}
+
+/**
  * Implements hook_css_alter().
  */
 function sizzle_css_alter(&$css) {
@@ -78,12 +165,6 @@ function sizzle_preprocess_page(&$variables) {
     $footer_background_image = file_load($footer_background_image_fid);
     $footer_background_image_url = file_create_url($footer_background_image->uri);
     drupal_add_css('.footer { background-image: url("' . $footer_background_image_url . '") }', array('type' => 'inline'));
-  }
-
-  $primary_color = theme_get_setting('primary_color');
-  $colors = array('color', 'background-color', 'border-color');
-  foreach ($colors as $color) {
-    drupal_add_css(".$color-primary { $color: #$primary_color !important; }", array('type' => 'inline'));
   }
 
   // Add copyright to theme.
