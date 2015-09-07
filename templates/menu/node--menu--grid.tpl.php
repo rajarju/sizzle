@@ -32,8 +32,8 @@
       <small class="menu__one-liner"><?php print render($content['field_menu_one_liner']); ?></small>
     <?php endif; ?>
 
-    <?php if (!empty($content['field_menu_types'])): ?>
-      <div class="menu__types border--xs--top"><?php print render($content['field_menu_types']); ?></div>
+    <?php if (!empty($content['field_menu_variants'])): ?>
+      <div class="menu__variants border--xs--top"><?php print render($content['field_menu_variants']); ?></div>
     <?php endif; ?>
   </div>
 

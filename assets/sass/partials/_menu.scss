@@ -1,12 +1,12 @@
 // Layout: Menus
 // -----------------------------------------------------------------------------
 .layout--menus {
-  .layout__region--left {
+  .layout__region--region-c {
     @include bp(md) {
       padding-right: 0;
     }
   }
-  .layout__region--content {
+  .layout__region--region-d {
     border-left: 1px solid $brand-primary;
     min-height: 400px;
   }
@@ -29,15 +29,16 @@
   .menu__title {
     font-size: 1.2em;
   }
-  .menu__types {
+  .menu__variants {
     border-color: rgba($brand-primary, 0.5);
   }
-  .menu__type {
+  .menu__variant {
     margin-top: 8px;
-    .menu__type__type {
+    &__type {
       font-size: 0.85em;
+      float: left;
     }
-    .menu__type__price {
+    &__price {
       font-weight: 400;
       font-size: 1.2em;
       float: right;

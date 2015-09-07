@@ -22,6 +22,7 @@ function sizzle_preprocess_taxonomy_term_menu_categories(&$variables) {
 function sizzle_preprocess_node_menu(&$variables) {
   $node = $variables['node'];
   $metadata = entity_metadata_wrapper('node', $node);
+
   // Add the featured ribbon.
   if (!empty($node->field_menu_featured)) {
     if ($metadata->field_menu_featured->value()) {
@@ -43,9 +44,11 @@ function sizzle_preprocess_views_view__content__menus__all_menus(&$variables) {
   $variables['group_attributes']['class'] = 'ribbon ribbon--secondary';
 
   // Render the Menu category on top of the rows.
+  $variables['term'] = '';
   if (count($variables['rows'])) {
     // Get the current view mode.
-    $view_mode = $view->style_plugin->row_plugin->options['view_mode'];
+//    dpm($view->style_plugin->row_plugin);
+    $view_mode = isset($view->style_plugin->row_plugin->options['view_mode']) ? $view->style_plugin->row_plugin->options['view_mode'] : 'grid';
     $bundles = entity_view_mode_get_enabled_bundles('taxonomy_term', $view_mode);
 
     // Get the first result.

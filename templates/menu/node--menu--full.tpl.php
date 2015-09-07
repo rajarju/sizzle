@@ -37,8 +37,8 @@
         <div class="menu__nutrition-types"><?php print render($content['field_menu_nutrition_types']); ?></div>
       <?php endif; ?>
 
-      <?php if (!empty($content['field_menu_types'])): ?>
-        <div class="menu__types border--xs--top"><?php print render($content['field_menu_types']); ?></div>
+      <?php if (!empty($content['field_menu_variants'])): ?>
+        <div class="menu__variants border--xs--top"><?php print render($content['field_menu_variants']); ?></div>
       <?php endif; ?>
 
       <?php if (!empty($content['body'])): ?>

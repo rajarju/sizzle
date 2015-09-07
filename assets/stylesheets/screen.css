@@ -11324,11 +11324,11 @@ body.maintenance-page .form-actions {
 }
 
 @media (min-width: 992px) {
-  .layout--menus .layout__region--left {
+  .layout--menus .layout__region--region-c {
     padding-right: 0;
   }
 }
-.layout--menus .layout__region--content {
+.layout--menus .layout__region--region-d {
   border-left: 1px solid #796b4f;
   min-height: 400px;
 }
@@ -11347,21 +11347,22 @@ body.maintenance-page .form-actions {
 .node--menu .menu__title {
   font-size: 1.2em;
 }
-.node--menu .menu__types {
+.node--menu .menu__variants {
   border-color: rgba(121, 107, 79, 0.5);
 }
-.node--menu .menu__type {
+.node--menu .menu__variant {
   margin-top: 8px;
 }
-.node--menu .menu__type .menu__type__type {
+.node--menu .menu__variant__type {
   font-size: 0.85em;
+  float: left;
 }
-.node--menu .menu__type .menu__type__price {
+.node--menu .menu__variant__price {
   font-weight: 400;
   font-size: 1.2em;
   float: right;
 }
-.node--menu .menu__type .menu__type__price sup {
+.node--menu .menu__variant__price sup {
   font-weight: 300;
   font-size: 0.60em;
 }
@@ -11768,11 +11769,6 @@ body {
   font-size: 2.4em;
 }
 
-.front .view {
-  background: url('../images/bg/bg-separator-shadow.png?1432577548') no-repeat top center;
-  padding-top: 100px;
-}
-
 .panel-display {
   padding: 40px 0;
 }
@@ -11802,7 +11798,7 @@ body {
   color: #d5cebf;
   text-align: center;
   text-shadow: 0px 1px 8px rgba(121, 107, 79, 0.9);
-  background-color: rgba(121, 107, 79, 0.95);
+  background-color: rgba(90, 80, 59, 0.9);
   padding: 30px;
   position: relative;
   -webkit-box-shadow: 0 0 5px rgba(121, 107, 79, 0.9);
@@ -11960,6 +11956,11 @@ body {
 }
 .view .view__footer {
   text-align: center;
+}
+
+.front .view {
+  background: url('../images/bg/bg-separator-shadow.png?1432577548') no-repeat top center;
+  padding-top: 100px;
 }
 
 .views-exposed-form .views-exposed-form__widget {
