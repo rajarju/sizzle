@@ -7,11 +7,11 @@
 .layout__region--region-b {
   @include box-shadow(0 5px 5px rgba($brand-primary, 0.2));
   .panel-pane {
-    float: right;
+    //float: right;
     margin: 0 0 0 10px;
   }
   .pane-fieldable-panels-pane {
-    float: left;
+    //float: left;
     margin: 0 10px 0 0;
     &.pane-bundle-text {
       padding: 5px 0;

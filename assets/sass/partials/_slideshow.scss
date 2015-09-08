@@ -6,10 +6,13 @@
 .field-slideshow-slide {
   background-repeat: no-repeat;
   background-position: center;
+  width: 100% !important;
+  //height: 100% !important;
   @include background-size(cover);
 
   .container {
     position: relative;
+    height: 250px;
   }
 
   .caption {

@@ -5,33 +5,35 @@
  */
 ?>
 <div class="layout layout--menu--node">
-  <?php if ($content['slideshow']): ?>
-    <div class="layout__region layout__region--slideshow padding--sm--bottom border--sm--bottom">
-      <?php print $content['slideshow']; ?>
+  <?php if ($content['region_a']): ?>
+    <div class="layout__region layout__region--region-a padding--sm--bottom border--sm--bottom">
+      <?php print $content['region_a']; ?>
     </div>
   <?php endif; ?>
 
-  <?php if ($content['top']): ?>
-    <div class="layout__region layout__region--top padding--xs--top padding--xs--bottom">
+  <?php if ($content['region_b']): ?>
+    <div class="layout__region layout__region--region-b padding--xs--top padding--xs--bottom">
       <div class="container">
-        <?php print $content['top']; ?>
+        <?php print $content['region_b']; ?>
       </div>
     </div>
   <?php endif; ?>
 
-  <?php if ($content['contentmain']): ?>
-    <div class="layout__region layout__region--content container padding--md--top padding--lg--bottom">
-      <?php print $content['contentmain']; ?>
+  <?php if ($content['region_c']): ?>
+    <div class="layout__region layout__region--region-c container padding--md--top padding--lg--bottom">
+      <?php print $content['region_c']; ?>
     </div>
   <?php endif; ?>
 
-  <?php if ($content['bottom_left'] || $content['bottom_right'] ): ?>
-    <div class="row">
-      <div class="col-md-6 layout__region layout__region--bottom-left">
-        <?php print $content['bottom_left']; ?>
-      </div>
-      <div class="col-md-6 layout__region layout__region--bottom-right">
-        <?php print $content['bottom_right']; ?>
+  <?php if ($content['region_d'] || $content['region_e'] ): ?>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 layout__region layout__region--region-d">
+          <?php print $content['region_d']; ?>
+        </div>
+        <div class="col-md-6 layout__region layout__region--region-e">
+          <?php print $content['region_e']; ?>
+        </div>
       </div>
     </div>
   <?php endif; ?>

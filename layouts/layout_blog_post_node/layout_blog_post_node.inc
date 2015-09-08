@@ -6,10 +6,10 @@ $plugin = array(
   'category' => t('Sizzle'),
   'theme' => 'layout__blog_post__node',
   'regions' => array(
-    'slideshow' => t('Slideshow'),
-    'top' => t('Top'),
-    'contentmain' => t('Content'),
-    'bottom_left' => t('Bottom left'),
-    'bottom_right' => t('Bottom right'),
+    'region_a' => t('Region A'),
+    'region_b' => t('Region B'),
+    'region_c' => t('Region C'),
+    'region_d' => t('Region D'),
+    'region_e' => t('Region E'),
   ),
 );

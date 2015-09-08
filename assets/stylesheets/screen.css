@@ -11272,12 +11272,10 @@ form .form-checkboxes .radio label, form .form-checkboxes .checkbox label {
 }
 .layout__region--top .panel-pane,
 .layout__region--region-b .panel-pane {
-  float: right;
   margin: 0 0 0 10px;
 }
 .layout__region--top .pane-fieldable-panels-pane,
 .layout__region--region-b .pane-fieldable-panels-pane {
-  float: left;
   margin: 0 10px 0 0;
 }
 .layout__region--top .pane-fieldable-panels-pane.pane-bundle-text,
@@ -11786,6 +11784,7 @@ body {
 .field-slideshow-slide {
   background-repeat: no-repeat;
   background-position: center;
+  width: 100% !important;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -11793,6 +11792,7 @@ body {
 }
 .field-slideshow-slide .container {
   position: relative;
+  height: 250px;
 }
 .field-slideshow-slide .caption {
   color: #d5cebf;
@@ -11916,8 +11916,7 @@ body {
 }
 
 .page-tabs ul.nav-tabs {
-  margin: 0 auto;
-  padding: 10px 0;
+  margin: 10px auto 0;
   border: 0;
 }
 .page-tabs ul.nav-tabs li {

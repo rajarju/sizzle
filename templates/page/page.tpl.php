@@ -20,6 +20,11 @@
           <i class="fa fa-phone margin--sm--left"></i> <?php print $phone; ?>
         <?php endif; ?>
       </div>
+      <?php if ($tabs): ?>
+        <div class="page-tabs">
+          <?php print render($tabs); ?>
+        </div>
+      <?php endif; ?>
     </div>
   </header>
 
@@ -49,11 +54,6 @@
     <?php if ($messages): ?>
       <div id="messages" class="container margin--sm--top">
         <?php print $messages; ?>
-      </div>
-    <?php endif; ?>
-    <?php if ($tabs): ?>
-      <div class="page-tabs">
-        <?php print render($tabs); ?>
       </div>
     <?php endif; ?>
     <?php if (!$is_panel): ?>

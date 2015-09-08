@@ -21,11 +21,6 @@
 // -----------------------------------------------------------------------------
 .address {
   font-size: 12px;
-//  border: 1px solid $brand-primary;
-//  padding: 10px;
-//  color: lighten($brand-primary, 40);
-//  text-align: right;
-//  background-color: rgba($brand-primary, 0.95);
 }
 
 // Page header
@@ -52,8 +47,7 @@
 // -----------------------------------------------------------------------------
 .page-tabs {
   ul.nav-tabs {
-    margin: 0 auto;
-    padding: 10px 0;
+    margin: 10px auto 0;
     border: 0;
     li {
       border: 0;

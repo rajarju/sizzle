@@ -5,29 +5,29 @@
  */
 ?>
 <div class="layout layout--locations">
-  <?php if ($content['slideshow']): ?>
-    <div class="layout__region layout__region--slideshow border--sm--bottom">
-      <?php print $content['slideshow']; ?>
+  <?php if ($content['region_a']): ?>
+    <div class="layout__region layout__region--region-a border--sm--bottom">
+      <?php print $content['region_a']; ?>
     </div>
   <?php endif; ?>
 
-  <?php if ($content['top']): ?>
-    <div class="layout__region layout__region--top padding--xs--top border--sm--bottom padding--xs--bottom">
+  <?php if ($content['region_b']): ?>
+    <div class="layout__region layout__region--region-b padding--xs--top border--sm--bottom padding--xs--bottom">
       <div class="container">
-        <?php print $content['top']; ?>
+        <?php print $content['region_b']; ?>
       </div>
     </div>
   <?php endif; ?>
   
-  <?php if ($content['contentmain']): ?>
-    <div class="layout__region layout__region--content container padding--lg--top padding--lg--bottom">
-      <?php print $content['contentmain']; ?>
+  <?php if ($content['region_c']): ?>
+    <div class="layout__region layout__region--region-c container padding--lg--top padding--lg--bottom">
+      <?php print $content['region_c']; ?>
     </div>
   <?php endif; ?>
 
-  <?php if ($content['bottom']): ?>
-    <div class="layout__region layout__region--bottom">
-      <?php print $content['bottom']; ?>
+  <?php if ($content['region_d']): ?>
+    <div class="layout__region layout__region--region-d">
+      <?php print $content['region_d']; ?>
     </div>
   <?php endif; ?>
 </div>
