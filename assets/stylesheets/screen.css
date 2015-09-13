@@ -11542,14 +11542,12 @@ ul.navbar-nav {
 ul.navbar-nav > li {
   position: relative;
   margin: 15px 0 10px;
+  padding: 0 6px;
 }
 @media (min-width: 992px) {
   ul.navbar-nav > li {
     padding: 9px 0 9px 15px;
     margin: 0;
-  }
-  ul.navbar-nav > li + li {
-    margin-left: 15px;
   }
   ul.navbar-nav > li:before {
     content: "\2726";
@@ -11559,12 +11557,17 @@ ul.navbar-nav > li {
     left: 0;
   }
 }
+@media (min-width: 992px) {
+  ul.navbar-nav > li + li {
+    margin-left: 14px;
+  }
+}
 ul.navbar-nav li a {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
-  padding: 4px 10px;
-  font-size: 15px;
+  padding: 4px 6px;
+  font-size: 13px;
   text-align: center;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -11576,18 +11579,29 @@ ul.navbar-nav li a {
   }
 }
 @media (min-width: 992px) {
+  ul.navbar-nav li a {
+    padding: 4px 10px;
+    font-size: 15px;
+  }
+}
+@media (min-width: 992px) {
   ul.navbar-nav > li.has-btn {
     padding-left: 25px;
   }
 }
 ul.navbar-nav > li.has-btn a.btn, .nav-tabs ul.navbar-nav > li.has-btn a, .nav--tabs ul.navbar-nav > li.has-btn a {
-  padding: 4px 15px 2px;
+  padding: 4px 8px 2px;
   display: table;
   margin: 0 auto;
 }
 ul.navbar-nav > li.has-btn a.btn:hover, .nav-tabs ul.navbar-nav > li.has-btn a:hover, .nav--tabs ul.navbar-nav > li.has-btn a:hover, ul.navbar-nav > li.has-btn a.btn:focus, .nav-tabs ul.navbar-nav > li.has-btn a:focus, .nav--tabs ul.navbar-nav > li.has-btn a:focus {
   background-color: #f26838;
   color: white;
+}
+@media (min-width: 992px) {
+  ul.navbar-nav > li.has-btn a.btn, .nav-tabs ul.navbar-nav > li.has-btn a, .nav--tabs ul.navbar-nav > li.has-btn a {
+    padding: 4px 15px 2px;
+  }
 }
 ul.navbar-nav > li .dropdown-menu {
   margin-top: 2px;

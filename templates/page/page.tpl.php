@@ -31,7 +31,7 @@
   <nav class="navbar navbar-default border-color-primary" role="navigation">
     <div class="container">
       <div class="navbar-header">
-        <div class="hidden-md hidden-lg pull-left">
+        <div class="visible-xs pull-left">
           <?php print render($menu_link); ?>
           <?php print render($reservation_link); ?>
         </div>

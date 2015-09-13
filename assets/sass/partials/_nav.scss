@@ -52,12 +52,10 @@ ul.navbar-nav {
   > li {
     position: relative;
     margin: 15px 0 10px;
+    padding: 0 6px;
     @include breakpoint(md) {
       padding: 9px 0 9px 15px;
       margin: 0;
-      + li {
-        margin-left: 15px;
-      }
       &:before {
         content: "\2726";
         font-size: 10px;
@@ -66,18 +64,27 @@ ul.navbar-nav {
         left: 0;
       }
     }
+    + li {
+      @include breakpoint(md) {
+        margin-left: 14px;
+      }
+    }
   }
   li {
     a {
       font-family: $font-secondary;
       font-weight: 600;
       text-transform: uppercase;
-      padding: 4px 10px;
-      font-size: 15px;
+      padding: 4px 6px;
+      font-size: 13px;
       text-align: center;
       @include transition(all 0.2s ease-in-out);
       @include breakpoint(md) {
         text-align: left;
+      }
+      @include breakpoint(md) {
+        padding: 4px 10px;
+        font-size: 15px;
       }
     }
   }
@@ -88,12 +95,15 @@ ul.navbar-nav {
         padding-left: 25px;
       }
       a.btn {
-        padding: 4px 15px 2px;
+        padding: 4px 8px 2px;
         display: table;
         margin: 0 auto;
         @include hover {
           background-color: $brand-secondary;
           color: white;
+        }
+        @include breakpoint(md) {
+          padding: 4px 15px 2px;
         }
       }
     }
