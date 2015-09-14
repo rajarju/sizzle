@@ -125,6 +125,8 @@ function sizzle_preprocess_html(&$variables, $hook) {
  * Implements template_preprocess_page().
  */
 function sizzle_preprocess_page(&$variables) {
+  $theme_path = drupal_get_path('theme', 'sizzle');
+
   // Add a menu link.
   $variables['menu_link'] = l(t('Menu'), 'menu', array(
     'attributes' => array(
@@ -164,8 +166,11 @@ function sizzle_preprocess_page(&$variables) {
   if ($footer_background_image_fid = theme_get_setting('footer_background_image')) {
     $footer_background_image = file_load($footer_background_image_fid);
     $footer_background_image_url = file_create_url($footer_background_image->uri);
-    drupal_add_css('.footer { background-image: url("' . $footer_background_image_url . '") }', array('type' => 'inline'));
   }
+  else {
+    $footer_background_image_url = '/' . $theme_path . '/assets/images/bg/bg-footer-default.jpg';
+  }
+  drupal_add_css('.footer { background-image: url("' . $footer_background_image_url . '") }', array('type' => 'inline'));
 
   // Add copyright to theme.
   $copyright = theme_get_setting('copyright');
