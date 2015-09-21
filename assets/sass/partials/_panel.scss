@@ -21,3 +21,14 @@
     }
   }
 }
+
+// Region B
+// -----------------------------------------------------------------------------
+.layout__region {
+  &--region-b {
+    .views-exposed-form {
+      display: table;
+      margin: 0 auto;
+    }
+  }
+}

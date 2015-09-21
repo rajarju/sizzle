@@ -11352,8 +11352,9 @@ body.maintenance-page .form-actions {
   margin-top: 8px;
 }
 .node--menu .menu__variant__type {
-  font-size: 0.85em;
+  font-size: 1.0em;
   float: left;
+  margin-top: 2px;
 }
 .node--menu .menu__variant__price {
   font-weight: 400;
@@ -11793,6 +11794,11 @@ body {
 .panels-add-content-modal .widget-preview .btn.panels-modal-add-config:hover, .panels-add-content-modal .widget-preview .nav-tabs li a.panels-modal-add-config:hover, .nav-tabs li .panels-add-content-modal .widget-preview a.panels-modal-add-config:hover, .panels-add-content-modal .widget-preview .nav--tabs li a.panels-modal-add-config:hover, .nav--tabs li .panels-add-content-modal .widget-preview a.panels-modal-add-config:hover, .panels-add-content-modal .widget-preview .views-exposed-form .views-exposed-form__widget--select > label.panels-modal-add-config:hover, .views-exposed-form .panels-add-content-modal .widget-preview .views-exposed-form__widget--select > label.panels-modal-add-config:hover, .panels-add-content-modal .widget-preview .btn.panels-modal-add-config:focus, .panels-add-content-modal .widget-preview .nav-tabs li a.panels-modal-add-config:focus, .nav-tabs li .panels-add-content-modal .widget-preview a.panels-modal-add-config:focus, .panels-add-content-modal .widget-preview .nav--tabs li a.panels-modal-add-config:focus, .nav--tabs li .panels-add-content-modal .widget-preview a.panels-modal-add-config:focus, .panels-add-content-modal .widget-preview .views-exposed-form .views-exposed-form__widget--select > label.panels-modal-add-config:focus, .views-exposed-form .panels-add-content-modal .widget-preview .views-exposed-form__widget--select > label.panels-modal-add-config:focus {
   background: #f26838;
   border-color: #f26838;
+}
+
+.layout__region--region-b .views-exposed-form {
+  display: table;
+  margin: 0 auto;
 }
 
 .field-slideshow-slide {
