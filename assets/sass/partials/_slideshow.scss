@@ -22,6 +22,8 @@
     background-color: rgba(darken($brand-primary, 10), 0.90);
     padding: 30px;
     position: relative;
+    max-width: 500px;
+    margin: 60px auto;
     @include box-shadow(0 0 5px rgba($brand-primary, 0.9));
     &:before {
       content: " ";
@@ -31,10 +33,6 @@
       right: 15px;
       bottom: 15px;
       left: 15px;
-    }
-    @include breakpoint(md) {
-      max-width: 500px;
-      margin: 60px auto;
     }
 
     h1, h2, h3, h4, h5, h6 {

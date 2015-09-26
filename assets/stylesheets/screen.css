@@ -11834,6 +11834,8 @@ body {
   background-color: rgba(90, 80, 59, 0.9);
   padding: 30px;
   position: relative;
+  max-width: 500px;
+  margin: 60px auto;
   -webkit-box-shadow: 0 0 5px rgba(121, 107, 79, 0.9);
   box-shadow: 0 0 5px rgba(121, 107, 79, 0.9);
 }
@@ -11845,12 +11847,6 @@ body {
   right: 15px;
   bottom: 15px;
   left: 15px;
-}
-@media (min-width: 992px) {
-  .field-slideshow-slide .caption {
-    max-width: 500px;
-    margin: 60px auto;
-  }
 }
 .field-slideshow-slide .caption h1, .field-slideshow-slide .caption h2, .field-slideshow-slide .caption h3, .field-slideshow-slide .caption h4, .field-slideshow-slide .caption h5, .field-slideshow-slide .caption h6 {
   font-family: "Raleway", sans-serif;
