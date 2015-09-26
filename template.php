@@ -128,7 +128,7 @@ function sizzle_preprocess_page(&$variables) {
   $theme_path = drupal_get_path('theme', 'sizzle');
 
   // Add a menu link.
-  $variables['menu_link'] = l(t('Menu'), 'menu', array(
+  $variables['menu_link'] = l(t('The Menu'), 'menus', array(
     'attributes' => array(
       'class' => array('btn'),
     ),

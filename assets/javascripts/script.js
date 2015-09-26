@@ -14,22 +14,32 @@
   Drupal.behaviors.menuCategoriesNavigation = {
     attach: function(context, settings) {
       if ($('.view-menu-categories', context).length) {
-        // Make navigation sticky.
-        var stickyNavigation = new Waypoint.Sticky({
-          element: $('.view-menu-categories', context)[0]
+
+        setStickyNavigation();
+        $(window).resize(function() {
+          setStickyNavigation();
         });
 
-        // Make category active when scrolled to.
-        $('.view--menus--all-menus [data-menu-category]').waypoint({
-          handler: function (direction) {
-            var el = $(this.element);
-            var category = el.data().menuCategory;
-            $('[data-menu-category="' + category + '"]')
-              .addClass('active')
-              .siblings().removeClass('active');
-          },
-          offset: '10%'
-        });
+        function setStickyNavigation() {
+          if (!isBreakpoint('xs')) {
+            // Make navigation sticky.
+            var stickyNavigation = new Waypoint.Sticky({
+              element: $('.view-menu-categories', context)[0]
+            });
+
+            // Make category active when scrolled to.
+            $('.view--menus--all-menus [data-menu-category]').waypoint({
+              handler: function (direction) {
+                var el = $(this.element);
+                var category = el.data().menuCategory;
+                $('[data-menu-category="' + category + '"]')
+                  .addClass('active')
+                  .siblings().removeClass('active');
+              },
+              offset: '10%'
+            });
+          }
+        }
       }
     }
   }
@@ -63,5 +73,9 @@
         $(this).find('input').click();
       });
     }
+  }
+
+  function isBreakpoint(alias) {
+    return $('.device-' + alias).is(':visible');
   }
 })(jQuery);

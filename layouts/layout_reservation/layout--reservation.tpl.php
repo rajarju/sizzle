@@ -22,12 +22,12 @@
   <div class="container padding--lg--top padding--lg--bottom">
     <div class="row">
       <?php if ($content['region_c']): ?>
-        <div class="layout__region layout__region--region-c col-md-4">
+        <div class="layout__region layout__region--region-c col-sm-4">
           <?php print $content['region_c']; ?>
         </div>
       <?php endif; ?>
       <?php if ($content['region_d']): ?>
-        <div class="layout__region layout__region--region-d col-md-8">
+        <div class="layout__region layout__region--region-d col-sm-8">
           <?php print $content['region_d']; ?>
         </div>
       <?php endif; ?>

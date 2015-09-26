@@ -7,7 +7,7 @@
 <article class="<?php print $classes; ?>">
   <div class="row">
     <div class="col-sm-5">
-      <div class="blog-post__image">
+      <div class="blog-post__image margin--sm--bottom">
         <?php print render($content['field_blog_post_featured_image']); ?>
       </div>
     </div>

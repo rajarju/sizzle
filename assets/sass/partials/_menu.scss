@@ -6,9 +6,18 @@
       padding-right: 0;
     }
   }
+  .layout__region__inner {
+    padding-top: 30px;
+    @include bp(md) {
+      padding-top: 50px;
+      padding-left: 50px;
+    }
+  }
   .layout__region--region-d {
-    border-left: 1px solid $brand-primary;
-    min-height: 400px;
+    @include bp(md) {
+      border-left: 1px solid $brand-primary;
+      min-height: 400px;
+    }
   }
 }
 
@@ -28,6 +37,10 @@
   }
   h4.menu__title {
     font-size: 1.2em;
+    margin-top: 0;
+    @include bp(sm) {
+      margin-top: 10px;
+    }
   }
   .menu__variants {
     border-color: rgba($brand-primary, 0.5);
@@ -61,6 +74,7 @@
 
   // Featured menu.
   &--featured {
+    margin-bottom: 20px;
     .menu__wrapper {
       border: 1px solid $brand-primary;
       padding: 8px;
@@ -112,6 +126,11 @@
 // Menu Categories
 // -----------------------------------------------------------------------------
 .term--menu-categories {
+  &--view-mode--grid {
+    img {
+      margin-bottom: 20px;
+    }
+  }
   &--view-mode--navigation {
     position: relative;
     &:after {
@@ -154,11 +173,20 @@
 // View: Menu Categories
 // -----------------------------------------------------------------------------
 .view--menu-categories--menu-categories {
-  margin-top: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  @include bp(sm) {
+    margin-top: 50px;
+  }
   &.stuck {
-    position: fixed;
-    top: 0px;
-    width: 229px;
+    @include bp(sm) {
+      position: fixed;
+      top: 0px;
+      width: 160px;
+    }
+    @include bp(md) {
+      width: 229px;
+    }
   }
 }
 
@@ -179,5 +207,9 @@
   }
   .term, .node {
     margin-bottom: 40px;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
   }
 }

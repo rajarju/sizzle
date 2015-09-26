@@ -29,6 +29,10 @@
     .views-exposed-form {
       display: table;
       margin: 0 auto;
+      width: 100%;
+      @include bp(sm) {
+        width: auto;
+      }
     }
   }
 }

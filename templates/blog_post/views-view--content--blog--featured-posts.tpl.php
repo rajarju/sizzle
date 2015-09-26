@@ -8,7 +8,7 @@
 <?php foreach ($rows as $cols): ?>
   <div class="view__row row">
     <?php foreach ($cols as $col): ?>
-      <div class="view__col col-md-6">
+      <div class="view__col col-sm-6">
         <?php print $col; ?>
       </div>
     <?php endforeach; ?>

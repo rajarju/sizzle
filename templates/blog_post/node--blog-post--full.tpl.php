@@ -5,7 +5,7 @@
  */
 ?>
 <article class="<?php print $classes; ?>">
-  <h1 class="blog-post__title clear-margin--top margin--md--bottom hidden-md hidden-lg">
+  <h1 class="blog-post__title clear-margin--top margin--md--bottom hidden-sm hidden-md hidden-lg">
     <?php print $title; ?>
   </h1>
 
@@ -18,7 +18,7 @@
       <?php endif; ?>
     </div>
     <div class="col-sm-7">
-      <h1 class="blog-post__title clear-margin--top margin--sm--bottom hidden-xs hidden-sm">
+      <h1 class="blog-post__title clear-margin--top margin--sm--bottom hidden-xs">
         <?php print $title; ?>
       </h1>
       <?php if (!empty($content['posted_date'])): ?>

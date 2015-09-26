@@ -141,7 +141,7 @@ ul.footer-nav {
   padding: 30px 15px;
   > li {
     @extend .col-xs-6;
-    @extend .col-md-3;
+    @extend .col-sm-3;
     display: block;
     margin-bottom: 35px;
     @include breakpoint(md) {
@@ -197,13 +197,20 @@ ul.footer-nav {
     margin: 0 auto 25px;
     text-align: center;
     border: 1px solid $brand-primary;
-    display: table;
     @include border-radius(2px);
+    @include bp(sm) {
+      display: table;
+    }
     li {
       margin: 0;
-      border-right: 1px solid $brand-primary;
+      float: none;
+      border-bottom: 1px solid $brand-primary;
+      @include bp(sm) {
+        border-right: 1px solid $brand-primary;
+        float: left;
+      }
       &:last-child {
-        border-right: 0;
+        border: 0;
       }
       a {
         @extend .btn;
