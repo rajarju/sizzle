@@ -13,6 +13,15 @@
   @extend .border-color-primary;
   border-width: 2px 0;
   margin: 0;
+  background: $body-bg $body-bg-image;
+  &.stuck {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 700;
+  }
 }
 .navbar-header {
   .btn {

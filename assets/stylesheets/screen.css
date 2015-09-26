@@ -11601,6 +11601,15 @@ body.maintenance-page .form-actions {
 .navbar.navbar-default {
   border-width: 2px 0;
   margin: 0;
+  background: #222222 url('../images/bg/bg-body.jpg?1432540434') repeat center;
+}
+.navbar.navbar-default.stuck {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 700;
 }
 
 .navbar-header .btn, .navbar-header .nav-tabs li a, .nav-tabs li .navbar-header a, .navbar-header .nav--tabs li a, .nav--tabs li .navbar-header a, .navbar-header .views-exposed-form .views-exposed-form__widget--select > label, .views-exposed-form .navbar-header .views-exposed-form__widget--select > label {

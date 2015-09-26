@@ -3,6 +3,16 @@
  * Custom scripts for theme.
  */
 (function ($) {
+  // Sticky Nav.
+  Drupal.behaviors.stickyNav = {
+    attach: function(context, settings) {
+      // Make navigation sticky.
+      var stickyNavigation = new Waypoint.Sticky({
+        element: $('.navbar', context)[0]
+      });
+    }
+  }
+
   // Match height.
   Drupal.behaviors.equalMenuHeight = {
     attach: function(context, settings) {
