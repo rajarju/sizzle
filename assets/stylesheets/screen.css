@@ -11363,7 +11363,7 @@ body.maintenance-page .form-actions {
 @media (min-width: 992px) {
   .layout--menus .layout__region__inner {
     padding-top: 50px;
-    padding-left: 50px;
+    padding-left: 30px;
   }
 }
 @media (min-width: 992px) {
@@ -11428,12 +11428,15 @@ body.maintenance-page .form-actions {
   display: inline-block;
   margin: 0 5px 5px 0;
 }
-.node--menu--featured {
-  margin-bottom: 20px;
-}
-.node--menu--featured .menu__wrapper {
-  border: 1px solid #796b4f;
+.node--menu--view-mode--grid .menu__wrapper {
+  border: 1px solid #c1b6a0;
   padding: 8px;
+}
+@media (min-width: 768px) {
+  .node--menu--view-mode--grid .menu__wrapper {
+    padding: 0;
+    border: 0;
+  }
 }
 .node--menu--view-mode--grid .menu__image {
   margin-bottom: 10px;
@@ -11458,6 +11461,16 @@ body.maintenance-page .form-actions {
   font-size: 30px;
 }
 .node--menu--view-mode--stacked .ribbon {
+  left: -15px;
+}
+.node--menu--featured {
+  margin-bottom: 20px;
+}
+.node--menu--featured .menu__wrapper {
+  border: 1px solid #796b4f;
+  padding: 8px;
+}
+.node--menu--featured .ribbon {
   left: -15px;
 }
 

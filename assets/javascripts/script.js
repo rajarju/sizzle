@@ -6,7 +6,7 @@
   // Match height.
   Drupal.behaviors.equalMenuHeight = {
     attach: function(context, settings) {
-      $('.menu--view-mode-grid', context).matchHeight();
+      $('.node--menu--view-mode--grid', context).matchHeight();
     }
   }
 

@@ -15,7 +15,7 @@
   <?php foreach ($rows as $cols): ?>
     <div class="view__row row">
       <?php foreach ($cols as $col): ?>
-        <div class="view__col col-xs-12 col-sm-<?php print $col_size; ?>">
+        <div class="view__col col-xs-12 col-sm-6 col-md-<?php print $col_size; ?>">
           <?php print $col; ?>
         </div>
       <?php endforeach; ?>

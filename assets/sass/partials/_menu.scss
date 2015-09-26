@@ -10,7 +10,7 @@
     padding-top: 30px;
     @include bp(md) {
       padding-top: 50px;
-      padding-left: 50px;
+      padding-left: 30px;
     }
   }
   .layout__region--region-d {
@@ -72,17 +72,16 @@
     }
   }
 
-  // Featured menu.
-  &--featured {
-    margin-bottom: 20px;
-    .menu__wrapper {
-      border: 1px solid $brand-primary;
-      padding: 8px;
-    }
-  }
-
   // View mode: Grid.
   &--view-mode--grid {
+    .menu__wrapper {
+      border: 1px solid lighten($brand-primary, 30);
+      padding: 8px;
+      @include bp(sm) {
+        padding: 0;
+        border: 0;
+      }
+    }
     .menu__image {
       margin-bottom: 10px;
     }
@@ -117,6 +116,18 @@
   }
 
   &--view-mode--stacked {
+    .ribbon {
+      left: -15px;
+    }
+  }
+
+  // Featured menu.
+  &--featured {
+    margin-bottom: 20px;
+    .menu__wrapper {
+      border: 1px solid $brand-primary;
+      padding: 8px;
+    }
     .ribbon {
       left: -15px;
     }
