@@ -11031,6 +11031,10 @@ body.panels-ipe {
   margin-bottom: 55px !important;
 }
 
+div#panels-ipe-control-container {
+  background: rgba(0, 0, 0, 0.2);
+}
+
 div.panels-ipe-placeholder {
   background-color: rgba(242, 104, 56, 0.5);
   outline: 1px dashed #f26838;
@@ -11342,7 +11346,7 @@ body.maintenance-page .form-actions {
 .node--menu .menu__one-liner {
   display: block;
 }
-.node--menu .menu__title {
+.node--menu h4.menu__title {
   font-size: 1.2em;
 }
 .node--menu .menu__variants {
@@ -11405,6 +11409,9 @@ body.maintenance-page .form-actions {
 }
 .node--menu--view-mode--full .menu__title {
   font-size: 30px;
+}
+.node--menu--view-mode--stacked .ribbon {
+  left: -15px;
 }
 
 .term--menu-categories--view-mode--navigation {

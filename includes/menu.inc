@@ -47,7 +47,6 @@ function sizzle_preprocess_views_view__content__menus__all_menus(&$variables) {
   $variables['term'] = '';
   if (count($variables['rows'])) {
     // Get the current view mode.
-//    dpm($view->style_plugin->row_plugin);
     $view_mode = isset($view->style_plugin->row_plugin->options['view_mode']) ? $view->style_plugin->row_plugin->options['view_mode'] : 'grid';
     $bundles = entity_view_mode_get_enabled_bundles('taxonomy_term', $view_mode);
 
@@ -56,6 +55,10 @@ function sizzle_preprocess_views_view__content__menus__all_menus(&$variables) {
     reset($variables['rows']);
     $first_row = key($variables['rows']);
     $result = $results[$first_row];
+
+    // Determine the col size based on the view mode.
+    $rendered_view_mode = $view->field['rendered_entity']->options['view_mode'];
+    $variables['col_size'] = ($rendered_view_mode == 'grid') ? 4 : 12;
 
     // Check if this vocabulary has the required view mode.
     if (!empty($result->taxonomy_term_data_node__taxonomy_vocabulary_machine_name) && !empty($bundles[$result->taxonomy_term_data_node__taxonomy_vocabulary_machine_name])) {

@@ -26,7 +26,7 @@
   .menu__one-liner {
     display: block;
   }
-  .menu__title {
+  h4.menu__title {
     font-size: 1.2em;
   }
   .menu__variants {
@@ -99,6 +99,12 @@
   &--view-mode--full {
     .menu__title {
       font-size: 30px;
+    }
+  }
+
+  &--view-mode--stacked {
+    .ribbon {
+      left: -15px;
     }
   }
 }

@@ -29,6 +29,9 @@ ul.contextual-links {
 body.panels-ipe {
   margin-bottom: 55px !important;
 }
+div#panels-ipe-control-container {
+  background: rgba(black, 0.2);
+}
 div.panels-ipe-placeholder {
   background-color: rgba($brand-secondary, 0.5);
   outline: 1px dashed $brand-secondary;

@@ -20,7 +20,7 @@
       </div>
       <div class="col-md-9">
         <?php if (!empty($title)): ?>
-          <h4 class="menu__title"><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h4>
+          <h3 class="menu__title"><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h3>
         <?php endif; ?>
 
         <?php if (!empty($content['field_menu_nutrition_types'])): ?>
