@@ -224,3 +224,14 @@
     }
   }
 }
+
+// View: Featured Menus
+// -----------------------------------------------------------------------------
+.view--menus--featured-menus {
+  .node--menu {
+    .menu__wrapper {
+      border: 0;
+      padding: 0;
+    }
+  }
+}
