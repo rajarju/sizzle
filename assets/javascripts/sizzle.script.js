@@ -7,9 +7,12 @@
   Drupal.behaviors.stickyNav = {
     attach: function(context, settings) {
       // Make navigation sticky.
-      var stickyNavigation = new Waypoint.Sticky({
-        element: $('.navbar', context)[0]
-      });
+      if (!$('.navbar').hasClass('waypoint-processed')) {
+        var stickyNavigation = new Waypoint.Sticky({
+          element: $('.navbar', context)[0]
+        });
+        $('.navbar').addClass('waypoint-processed')
+      }
     }
   }
 
@@ -24,14 +27,13 @@
   Drupal.behaviors.menuCategoriesNavigation = {
     attach: function(context, settings) {
       if ($('.view-menu-categories', context).length) {
-
         setStickyNavigation();
         $(window).resize(function() {
           setStickyNavigation();
         });
 
         function setStickyNavigation() {
-          if (!isBreakpoint('xs')) {
+          if (!isBreakpoint('xs') && !$('.view-menu-categories').hasClass('waypoint-processed')) {
             // Make navigation sticky.
             var stickyNavigation = new Waypoint.Sticky({
               element: $('.view-menu-categories', context)[0]
@@ -48,6 +50,8 @@
               },
               offset: '10%'
             });
+
+            $('.view-menu-categories').addClass('waypoint-processed');
           }
         }
       }

@@ -26,11 +26,11 @@ scripts[] = assets/vendor/waypoints/lib/shortcuts/sticky.min.js
 scripts[] = assets/vendor/waypoints/lib/shortcuts/inview.min.js
 
 ; CSS - General
-stylesheets[all][]     = assets/stylesheets/screen.css
-stylesheets[all][]     = assets/stylesheets/custom.css
+stylesheets[all][]     = assets/stylesheets/sizzle.screen.css
+stylesheets[all][]     = assets/stylesheets/sizzle.custom.css
 
 ; Javascript
-scripts[] = assets/javascripts/script.js
+scripts[] = assets/javascripts/sizzle.script.js
 
 ; Settings
 settings[site_width] = boxed
