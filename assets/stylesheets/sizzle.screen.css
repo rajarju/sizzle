@@ -12066,7 +12066,7 @@ body {
 
 .alert.alert-success {
   background: #796b4f;
-  color: white;
+  color: #d5cebf;
 }
 
 .node {
@@ -12085,7 +12085,7 @@ body {
 }
 .page-tabs ul.nav-tabs li a {
   background-color: #796b4f;
-  color: white;
+  color: #d5cebf;
   border: 1px solid #796b4f;
   min-width: 0;
   padding: 5px 8px;
