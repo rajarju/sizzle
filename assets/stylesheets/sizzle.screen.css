@@ -11460,6 +11460,9 @@ body.maintenance-page .form-actions {
 .node--menu--view-mode--full .menu__title {
   font-size: 30px;
 }
+.node--menu--view-mode--full .menu__image {
+  position: relative;
+}
 .node--menu--view-mode--stacked .ribbon {
   left: -15px;
 }
