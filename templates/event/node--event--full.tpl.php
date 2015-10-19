@@ -15,6 +15,10 @@
         <div class="event__images margin--md--bottom">
           <?php print render($content['field_event_images'][0]); ?>
         </div>
+      <?php elseif (!empty($content['field_event_featured_image'])): ?>
+          <div class="event__images margin--md--bottom">
+            <?php print render($content['field_event_featured_image']); ?>
+          </div>
       <?php endif; ?>
     </div>
     <div class="col-sm-7">
