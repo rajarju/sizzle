@@ -12130,6 +12130,16 @@ body {
     padding-top: 100px;
   }
 }
+.front .view__header h1 {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.front .view__header p.lead, .front .view__header .lead.text, .front .view__header .lead.text--normal {
+  text-transform: uppercase;
+  color: #f26838;
+  font-size: 15px;
+  font-weight: 400;
+}
 
 .views-exposed-form .views-exposed-form__widget {
   margin: 10px 0 0 0;
