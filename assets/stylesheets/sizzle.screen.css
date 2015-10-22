@@ -11035,13 +11035,15 @@ ul.contextual-links > li > a:hover, ul.contextual-links > li > a:focus {
 }
 
 body.panels-ipe {
-  margin-bottom: 55px !important;
+  margin-bottom: 0px !important;
 }
 
 div#panels-ipe-control-container {
   background: none;
-  top: 50px;
+  top: 52px;
+  left: auto;
   bottom: auto;
+  float: right;
 }
 div#panels-ipe-control-container .panels-ipe-button-container,
 div#panels-ipe-control-container .panels-ipe-form-container {
