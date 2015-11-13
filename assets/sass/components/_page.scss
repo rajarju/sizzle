@@ -33,7 +33,7 @@ body {
   margin: 0;
   padding: 65px 0 45px;
   position: relative;
-  @include background-size(cover);
+  background-size: cover;
   &:before {
     z-index: 100;
     content: "";

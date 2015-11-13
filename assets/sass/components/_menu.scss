@@ -29,7 +29,7 @@
       max-width: 100%;
       width: 100%;
       height: auto;
-      @include border-radius(2px);
+      border-radius: 2px;
     }
   }
   .menu__one-liner {
@@ -100,11 +100,11 @@
     .menu__wrapper {
       padding: 0;
       position: relative;
-      @include border-radius(2px);
+      border-radius: 2px;
     }
     .menu__image {
       img {
-        @include border-radius(0px);
+        border-radius: 0px;
       }
     }
   }

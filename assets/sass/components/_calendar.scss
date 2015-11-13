@@ -24,7 +24,7 @@
             background: lighten($brand-secondary, 10);
             padding: 5px;
             color: white;
-            @include border-radius(0);
+            border-radius: 0;
             a {
               color: white;
               font-size: 1.2em;
@@ -42,7 +42,7 @@
             background: lighten($brand-secondary, 10);
             height: 40px;
             padding: 5px;
-            @include border-radius(0);
+            border-radius: 0;
             a {
               color: white;
               font-size: 1.2em;

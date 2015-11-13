@@ -8,7 +8,7 @@
   background-position: center;
   width: 100% !important;
   //height: 100% !important;
-  @include background-size(cover);
+  background-size: cover;
 
   .container {
     position: relative;
@@ -100,7 +100,7 @@
       font-size: 0;
       cursor: pointer;
       margin: 0;
-      @include border-radius(50%);
+      border-radius: 50%;
     }
     &.active {
       background: none;
