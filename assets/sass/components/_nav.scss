@@ -5,6 +5,11 @@
 // -----------------------------------------------------------------------------
 .navbar-collapse {
   padding: 0;
+  @include breakpoint(sm) {
+    position: relative;
+    float: right;
+    left: -50%;
+  }
 }
 
 // Navbar
@@ -56,6 +61,11 @@ ul.navbar-nav {
   padding: 0 20px;
   @include breakpoint(md) {
     padding: 0;
+  }
+  @include breakpoint(sm) {
+    position: relative;
+    float: left;
+    left: 50%;
   }
 
   > li {
